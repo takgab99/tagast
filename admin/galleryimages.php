@@ -42,14 +42,14 @@ function uploadImages($category, $link) {
 
             //Upload the file into the temp dir
             if(move_uploaded_file($tmpFilePath, $newFilePath)) {
-                $result = mysql_query("SELECT weight FROM tagaster_data.gallery_images ORDER BY weight LIMIT 0,1", $link);
-                if (mysql_num_rows($result)==0){
+                $result = $mysqli->query("SELECT weight FROM tagaster_data.gallery_images ORDER BY weight LIMIT 0,1", $link);
+                if (mysqli_num_rows($result)==0){
                     $weight = 1;
                 } else {
                     $weight = mysql_result($result, 0);
                 }
                 $weight ++;
-                mysql_query("INSERT INTO tagaster_data.gallery_images (name, category_id, weight) VALUES ('" . $newFileName . "', " . $category . ", " . $weight . ")", $link);
+                $mysqli->query("INSERT INTO tagaster_data.gallery_images (name, category_id, weight) VALUES ('" . $newFileName . "', " . $category . ", " . $weight . ")", $link);
 
                 $size = getimagesize($newFilePath);
                 if($size[0] > 1200 || $size[1] > 1200 ) {
@@ -64,11 +64,11 @@ function uploadImages($category, $link) {
 }
 
 function delete_image($id, $link) {
-    $image = mysql_query("SELECT * FROM tagaster_data.gallery_images WHERE id = ".$id." LIMIT 0, 1", $link);
+    $image = $mysqli->query("SELECT * FROM tagaster_data.gallery_images WHERE id = ".$id." LIMIT 0, 1", $link);
     $row = mysql_fetch_assoc($image);
     unlink('../gallery/'.$row['name']);
     unlink('../gallery/thumbnail/'.$row['name']);
-    mysql_query("DELETE FROM tagaster_data.gallery_images WHERE id =".$id, $link);
+    $mysqli->query("DELETE FROM tagaster_data.gallery_images WHERE id =".$id, $link);
 }
 
 ?>
@@ -122,7 +122,7 @@ if(isset($_POST['action']) ) {
             <div class="panel-heading">
                 <div class="row">
                     <?php
-                    $image = mysql_query("SELECT * FROM tagaster_data.gallery_category WHERE id = ".$_POST['category']." LIMIT 0, 1", $link);
+                    $image = $mysqli->query("SELECT * FROM tagaster_data.gallery_category WHERE id = ".$_POST['category']." LIMIT 0, 1", $link);
                     $row = mysql_fetch_assoc($image);
                     ?>
                     <h1><?PHP print $row['name']; ?> - Kategória képek</h1>
@@ -131,8 +131,8 @@ if(isset($_POST['action']) ) {
             <div class="panel-body">
                 <div class="list-group images-holder">
                     <?php
-                    $images = mysql_query("SELECT * FROM tagaster_data.gallery_images WHERE category_id = ".$_POST['category']." ORDER BY weight ASC", $link);
-                    while ($image = mysql_fetch_array($images, MYSQL_ASSOC)) {
+                    $images = $mysqli->query("SELECT * FROM tagaster_data.gallery_images WHERE category_id = ".$_POST['category']." ORDER BY weight ASC", $link);
+                    while ($image = mysqli_fetch_array($images, MYSQLI_ASSOC)) {
                         ?>
                     <div class="list-group-item col-md-3" id="<?php print $image['id']; ?>">
                         <div class="img" style="background-image:url(<?php print '../gallery/thumbnail/' . $image['name']?>);"></div>

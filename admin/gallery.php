@@ -24,23 +24,23 @@ if($method == 'POST') {
 }
 
 function delete_category($id, $link) {
-    $images = $images = mysql_query("SELECT * FROM tagaster_data.gallery_images WHERE category_id = ".$id, $link);
-    while ($image = mysql_fetch_array($images, MYSQL_ASSOC)) {
+    $images = $images = $mysqli->query("SELECT * FROM tagaster_data.gallery_images WHERE category_id = ".$id, $link);
+    while ($image = mysqli_fetch_array($images, MYSQLI_ASSOC)) {
         unlink("../gallery/" . $image['name']);
         unlink("../gallery/thumbnail/" . $image['name']);
     }
-    mysql_query("DELETE FROM tagaster_data.gallery_images WHERE category_id =".$id, $link);
-    mysql_query("DELETE FROM tagaster_data.gallery_category WHERE id =".$id, $link);
+    $mysqli->query("DELETE FROM tagaster_data.gallery_images WHERE category_id =".$id, $link);
+    $mysqli->query("DELETE FROM tagaster_data.gallery_category WHERE id =".$id, $link);
 }
 
 function create_category($name, $link) {
-    $result = mysql_query("SELECT weight FROM tagaster_data.gallery_category ORDER BY weight LIMIT 0,1", $link);
-    if (mysql_num_rows($result)==0){
+    $result = $mysqli->query("SELECT weight FROM tagaster_data.gallery_category ORDER BY weight LIMIT 0,1", $link);
+    if (mysqli_num_rows($result)==0){
         $weight = 1;
     } else {
         $weight = mysql_result($result, 0);
     }
-    mysql_query("INSERT INTO tagaster_data.gallery_category (name, weight) VALUES ('".$name."', ".$weight.")", $link);
+    $mysqli->query("INSERT INTO tagaster_data.gallery_category (name, weight) VALUES ('".$name."', ".$weight.")", $link);
 }
 
 ?>
@@ -77,12 +77,12 @@ getNavbar();
                 <div class="row list-group">
                     <h3>Albumok</h3>
                     <?php
-                    $categories = mysql_query("SELECT * FROM tagaster_data.gallery_category ORDER BY weight ASC", $link);
-                    while ($category = mysql_fetch_array($categories, MYSQL_ASSOC)) {
+                    $categories = $mysqli->query("SELECT * FROM tagaster_data.gallery_category ORDER BY weight ASC", $link);
+                    while ($category = mysqli_fetch_array($categories, MYSQLI_ASSOC)) {
                         ?>
                         <div class="list-group-item">
                             <?php
-                            $image = mysql_query("SELECT * FROM tagaster_data.gallery_images WHERE category_id = ".$category['id']." ORDER BY weight ASC LIMIT 0, 1", $link);
+                            $image = $mysqli->query("SELECT * FROM tagaster_data.gallery_images WHERE category_id = ".$category['id']." ORDER BY weight ASC LIMIT 0, 1", $link);
                             $row = mysql_fetch_assoc($image);
                             if($row['name'] == null) {
                                 $row['name'] = '../gallery/no-image.png';

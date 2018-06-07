@@ -1,11 +1,11 @@
 <?php
 
-if ($_SERVER[HTTP_HOST] == "localhost") {
-    include "/var/www/krumo/class.krumo.php";
+if ($_SERVER['HTTP_HOST'] == "localhost") {
+//    include "/var/www/krumo/class.krumo.php";
 }
 
 // Get site url.
-if ($_SERVER[HTTP_HOST] == "localhost") {
+if ($_SERVER['HTTP_HOST'] == "localhost") {
     $root = "http://localhost/tagaster/";
 }
 else {
@@ -296,12 +296,12 @@ function trim_text($input, $length, $ellipses = true, $strip_html = true) {
 
 function getGalleryCategories() {
     $response = '';
-    $result = mysql_query("SELECT `category`, `thumb` FROM `gallery` GROUP BY `category` ORDER BY `category` ASC");
-    while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+    $result = $mysqli->query("SELECT `category`, `thumb` FROM `gallery` GROUP BY `category` ORDER BY `category` ASC");
+    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         $response += 'asdf';
     }
 
-    mysql_free_result($result);
+    mysqli_free_result($result);
 
     if($response == '' ){
         return '<h1>A galéria jelenleg üres!</h1>';

@@ -81,8 +81,8 @@ getCounter("main");
                     </div>-->
                     <!-- Indicators -->
                     <?php
-                    $query = mysql_query("SELECT * FROM slider ORDER BY weight ASC");
-                    $numQuery = mysql_num_rows($query);
+                    $query = $mysqli->query("SELECT * FROM slider ORDER BY weight ASC");
+                    $numQuery = mysqli_num_rows($query);
                     ?>
                     <ol class="carousel-indicators">
                     <?php
@@ -105,7 +105,7 @@ getCounter("main");
                         </div>-->
                         <?php
                         $first = TRUE;
-                        while ($item = mysql_fetch_array($query, MYSQL_ASSOC)) {
+                        while ($item = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
                         ?>
                         <div class="item<?php if ($first) { print " active"; $first = FALSE; } ?>">
                             <img src="img/slider/<?php print $item['image']; ?>" alt="<?php print $item['text']; ?>" style="margin: auto;">
@@ -162,7 +162,7 @@ getCounter("main");
                 <div class="row">
                     <div class="col-sm-12 portfolio-item text-center">
                         <?php
-                        /* $videosQuery = mysql_query("SELECT video FROM videos ORDER BY date DESC LIMIT 0,1");
+                        /* $videosQuery = $mysqli->query("SELECT video FROM videos ORDER BY date DESC LIMIT 0,1");
                         $video = mysql_fetch_assoc($videosQuery); */
                         ?>
                         <div class="embed-responsive embed-responsive-16by9">
@@ -181,8 +181,8 @@ getCounter("main");
             <!-- div class="col-sm-6 text-center news-summary">
                 <h2>— Hírek —</h2>
                     <?php
-                    $newsQuery = mysql_query("SELECT * FROM news ORDER BY date DESC LIMIT 0,3");
-                    while ($news = mysql_fetch_array($newsQuery, MYSQL_ASSOC)) {
+                    $newsQuery = $mysqli->query("SELECT * FROM news ORDER BY date DESC LIMIT 0,3");
+                    while ($news = mysqli_fetch_array($newsQuery, MYSQLI_ASSOC)) {
                         ?>
                         <div class="row text-left">
                             <h3><?php print $news['title']; ?></h3>
@@ -566,10 +566,10 @@ Fesztiválunk Szegeden a Vértónál, a Dugonics téren és néhány belvárosi 
     <h1>Galéria</h1>
     <div class="row gallery">
         <?php
-        $categories = mysql_query("SELECT * FROM `gallery_category` ORDER BY weight ASC");
-        while ($category = mysql_fetch_array($categories, MYSQL_ASSOC)) {
-            $image = mysql_query("SELECT * FROM tagaster_data.gallery_images WHERE category_id = ".$category['id']." ORDER BY weight ASC LIMIT 0, 1");
-            $katpic = mysql_fetch_assoc($image);
+        $categories = $mysqli->query("SELECT * FROM `gallery_category` ORDER BY weight ASC");
+        while ($category = mysqli_fetch_array($categories, MYSQLI_ASSOC)) {
+            $image = $mysqli->query("SELECT * FROM tagaster_data.gallery_images WHERE category_id = ".$category['id']." ORDER BY weight ASC LIMIT 0, 1");
+            $katpic = mysqli_fetch_assoc($image);
             if($katpic['name'] != null) {
                 ?>
                 <div class="category" data-category="<?php print $category['id']; ?>">

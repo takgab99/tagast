@@ -5,11 +5,11 @@
 	#this is the info for your database connection
     ####################################################################################
     ##
-if ($_SERVER[HTTP_HOST] == "localhost") {
+if ($_SERVER['HTTP_HOST'] == "localhost") {
 	$MYSQL_HOST  = "localhost";
 	$MYSQL_LOGIN = "root";
 	$MYSQL_PASS  = "qwe123";
-	$MYSQL_DB    = "tagaster_data";
+	$MYSQL_DB    = "tagaster2017";
 }
 else {
     $MYSQL_HOST  = "localhost";
@@ -28,7 +28,7 @@ else {
 	####################################################################################
 
 	#a session variable is set by class for much of the CRUD functionality -- eg adding a row
-    session_start();
+//    session_start();
 
     #for pesky IIS configurations without silly notifications turned off
     error_reporting(E_ALL - E_NOTICE);
@@ -65,8 +65,8 @@ else {
 			echo('Unable to connect to db <br />Error: <b>' . mysql_error() . "</b>");
 			exit;
 		}
-		mysql_query("SET NAMES 'utf8'");
-		//mysql_query("SET character_set_results = 'utf8_general_ci', character_set_client = 'utf8_general_ci', character_set_connection = 'utf8_general_ci', character_set_database = 'utf8_general_ci', character_set_server = 'utf8_general_ci'", $db);
+		$mysqli->query("SET NAMES 'utf8'");
+		//$mysqli->query("SET character_set_results = 'utf8_general_ci', character_set_client = 'utf8_general_ci', character_set_connection = 'utf8_general_ci', character_set_database = 'utf8_general_ci', character_set_server = 'utf8_general_ci'", $db);
 	}
 
 
@@ -114,7 +114,7 @@ else {
 				$numRows = $r->num_rows;
 			}
 			else{
-				$numRows = mysql_num_rows($r);
+				$numRows = mysqli_num_rows($r);
 			}
 			if ($numRows > 1){
 				if ($useMySQLi){
@@ -123,7 +123,7 @@ else {
 					}
 				}
 				else{
-					while($row = mysql_fetch_array($r)){
+					while($row = mysqli_fetch_array($r)){
 						$results[] = $row;
 					}
 				}
@@ -134,7 +134,7 @@ else {
 					$results[] = $r->fetch_array();
 				}
 				else{
-					$results[] = mysql_fetch_array($r);
+					$results[] = mysqli_fetch_array($r);
 				}
 			}
 			else{
@@ -157,7 +157,7 @@ else {
 				}
 			}
 			else{
-				$r = mysql_query($q);
+				$r = $mysqli->query($q);
 				if(mysql_error()){
 					echo mysql_error();
 					echo "<br>$q<br>";
@@ -172,7 +172,7 @@ else {
 				$row = $r->fetch_array();
 			}
 			else{
-				$row = @mysql_fetch_array($r);
+				$row = @mysqli_fetch_array($r);
 			}
 
 			if(count($row) == 2){
@@ -194,7 +194,7 @@ else {
 				}
 			}
 			else{
-				$r = mysql_query($q);
+				$r = $mysqli->query($q);
 				if(mysql_error()){
 					echo mysql_error();
 					echo "<br>$q<br>";
@@ -230,7 +230,7 @@ else {
 				$results[] = $r->fetch_array();
 			}
 			else{
-				$results[] = mysql_fetch_array($r);
+				$results[] = mysqli_fetch_array($r);
 			}
 
 			$results = $results[0];

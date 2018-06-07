@@ -36,8 +36,8 @@ getCounter();
 <!-- -->
 <?php
 $videos = "";
-$videosQuery = mysql_query("SELECT * FROM videos WHERE id = ". $_GET['id']);
-while ($videosTemp = mysql_fetch_array($videosQuery, MYSQL_ASSOC)) {
+$videosQuery = $mysqli->query("SELECT * FROM videos WHERE id = ". $_GET['id']);
+while ($videosTemp = mysqli_fetch_array($videosQuery, MYSQLI_ASSOC)) {
     $videos = $videosTemp;
 }
 ?>

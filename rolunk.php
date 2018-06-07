@@ -31,8 +31,8 @@ getCounter();
     </section>
     <!-- -->
 <?php
-$abouts = mysql_query("SELECT * FROM about");
-while ($about = mysql_fetch_array($abouts, MYSQL_ASSOC)) {
+$abouts = $mysqli->query("SELECT * FROM about");
+while ($about = mysqli_fetch_array($abouts, MYSQLI_ASSOC)) {
     $desc = $about['description'];
 }
 ?>

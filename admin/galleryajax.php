@@ -15,13 +15,13 @@ if( $_POST['action'] == 'description-update') {
 }
 
 function update_description($image, $description, $link) {
-    mysql_query("UPDATE tagaster_data.gallery_images SET description = '". $description . "' WHERE id =". $image, $link);
+    $mysqli->query("UPDATE tagaster_data.gallery_images SET description = '". $description . "' WHERE id =". $image, $link);
 }
 
 function changeSequence ($array, $link) {
     $count = 0;
     foreach($array as $item) {
         $count++;
-        mysql_query("UPDATE tagaster_data.gallery_images SET weight = '". $count . "' WHERE id =". $item, $link);
+        $mysqli->query("UPDATE tagaster_data.gallery_images SET weight = '". $count . "' WHERE id =". $item, $link);
     }
 }

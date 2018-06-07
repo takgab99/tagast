@@ -1,7 +1,7 @@
 <?php
 $locales = array();
-$result_locales = mysql_query("SELECT * FROM locales");
-while ($locale = mysql_fetch_array($result_locales, MYSQL_ASSOC)) {
+$result_locales = $mysqli->query("SELECT * FROM locales");
+while ($locale = mysqli_fetch_array($result_locales, MYSQLI_ASSOC)) {
     $locales[$locale['number']] = $locale['name'];
 }
 ?>
@@ -18,8 +18,8 @@ while ($locale = mysql_fetch_array($result_locales, MYSQL_ASSOC)) {
     </thead>
     <tbody>
     <?php
-        $result = mysql_query("SELECT * FROM programs WHERE day = " . $actDay . " ORDER BY start_time ASC");
-        while ($program = mysql_fetch_array($result, MYSQL_ASSOC)) {
+        $result = $mysqli->query("SELECT * FROM programs WHERE day = " . $actDay . " ORDER BY start_time ASC");
+        while ($program = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
             $endTime = NULL;
             if (isset($program['end_time'])) {

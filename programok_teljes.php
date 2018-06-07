@@ -3,11 +3,11 @@
 
 
 
-$result_locales = mysql_query("SELECT * FROM locales");
+$result_locales = $mysqli->query("SELECT * FROM locales");
 ?>
 <div id="accordion" class="ui-accordion ui-widget ui-helper-reset">
 <?php
-while ($locale = mysql_fetch_array($result_locales, MYSQL_ASSOC)) {
+while ($locale = mysqli_fetch_array($result_locales, MYSQLI_ASSOC)) {
 		$wrapperId = strtolower($locale['name']);
 		$raplaceChar = array("á");
 		$wrapperId = str_replace($raplaceChar, "a", $wrapperId);
@@ -30,9 +30,9 @@ while ($locale = mysql_fetch_array($result_locales, MYSQL_ASSOC)) {
 
     print "<h3 class=\"programs-wrapper programs-wrapper ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons\" id=\"".$wrapperId."\"><span class=\"ui-accordion-header-icon ui-icon ui-icon-triangle-1-e\"></span>".$locale['name']. "</h3>";
 
-    $result = mysql_query("SELECT * FROM programs WHERE locale_id = " . $locale['id'] . " ORDER BY start_time ASC");
+    $result = $mysqli->query("SELECT * FROM programs WHERE locale_id = " . $locale['id'] . " ORDER BY start_time ASC");
 
-    while ($program = mysql_fetch_array($result, MYSQL_ASSOC)) {
+    while ($program = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         $days[$program['day']][] = $program;
     }
 

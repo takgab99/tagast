@@ -2598,8 +2598,8 @@ class paging{
 			$rsCount 			= mysqli_num_rows($rs);
 		}
 		else{
-			$rs      			= mysql_query($query) or die(mysql_error()."<br>".$query);
-			$rsCount 			= mysql_num_rows($rs);
+			$rs      			= $mysqli->query($query) or die(mysql_error()."<br>".$query);
+			$rsCount 			= mysqli_num_rows($rs);
 		}
 
 		$this->pRecordCount = $rsCount;

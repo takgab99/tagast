@@ -36,8 +36,8 @@ getCounter();
 <!-- -->
 <?php
 $news = "";
-$newsQuery = mysql_query("SELECT * FROM news WHERE id = ". $_GET['id']);
-while ($newsTemp = mysql_fetch_array($newsQuery, MYSQL_ASSOC)) {
+$newsQuery = $mysqli->query("SELECT * FROM news WHERE id = ". $_GET['id']);
+while ($newsTemp = mysqli_fetch_array($newsQuery, MYSQLI_ASSOC)) {
     $news = $newsTemp;
 }
 ?>

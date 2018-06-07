@@ -42,15 +42,16 @@ else {
 $itemsPerPage = 3;
 $fromNo = ($pageNo-1) * $itemsPerPage;
 $toNo = $pageNo * $itemsPerPage;
-$result = mysql_query("SELECT * FROM news");
-$numNews = mysql_num_rows($result);
+$result = $mysqli->query("SELECT * FROM news");
+$numNews = mysqli_num_rows($result);
 
 getPager($pageNo, $itemsPerPage, $numNews);
 
-$newsQuery = mysql_query("SELECT * FROM news ORDER BY date DESC LIMIT $fromNo, $toNo");
-$numPageNews = mysql_num_rows($newsQuery);
+$newsQuery = $mysqli->query("SELECT * FROM news ORDER BY date DESC LIMIT $fromNo, $toNo");
+$numPageNews = mysqli_num_rows($newsQuery);
 $actualNewsNum = 1;
-while ($news = mysql_fetch_array($newsQuery, MYSQL_ASSOC)) {
+$lastRowClass = '';
+while ($news = mysqli_fetch_array($newsQuery, MYSQLI_ASSOC)) {
     // If this is the last row on this page.
     if ($numPageNews == $actualNewsNum) {
         $lastRowClass= " last";
@@ -64,7 +65,7 @@ while ($news = mysql_fetch_array($newsQuery, MYSQL_ASSOC)) {
                     ?>
                     <div class="<?php print $colImgClass; ?>">
                         <img src="img/news/<?php print $news['image']; ?>" class="img-responsive news-short-image" alt="Responsive image">
-                        <?php print $desc; ?>
+<!--                        --><?php //print $desc; ?>
                     </div>
                 <?php
                 }

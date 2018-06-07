@@ -42,15 +42,15 @@ getCounter();
         $itemsPerPage = 10;
         $fromNo = ($pageNo-1) * $itemsPerPage;
         $toNo = $pageNo * $itemsPerPage;
-        $result = mysql_query("SELECT * FROM videos");
-        $numVideos = mysql_num_rows($result);
+        $result = $mysqli->query("SELECT * FROM videos");
+        $numVideos = mysqli_num_rows($result);
 
 //        getPager($pageNo, $itemsPerPage, $numVideos);
 
-        $videosQuery = mysql_query("SELECT * FROM videos ORDER BY date DESC LIMIT $fromNo, $toNo");
-        $numPageVideos = mysql_num_rows($videosQuery);
+        $videosQuery = $mysqli->query("SELECT * FROM videos ORDER BY date DESC LIMIT $fromNo, $toNo");
+        $numPageVideos = mysqli_num_rows($videosQuery);
         $actualVideosNum = 1;
-        while ($videos = mysql_fetch_array($videosQuery, MYSQL_ASSOC)) {
+        while ($videos = mysqli_fetch_array($videosQuery, MYSQLI_ASSOC)) {
             // If this is the last row on this page.
             if ($numPageVideos == $actualVideosNum) {
                 $lastRowClass= " last";

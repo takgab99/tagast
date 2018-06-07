@@ -2,6 +2,9 @@
 include("lib.php");
 checkLogin("frontpage");
 
+$error = 0;
+$name = '';
+$pass = '';
 // Check if the login was correct.
 if (isset($_POST['name']) && isset($_POST['pass'])) {
     if ($_POST['name'] == "admin" && $_POST['pass'] == "b4b4szoba") {
