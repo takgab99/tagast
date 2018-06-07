@@ -1,0 +1,11 @@
+/* Navbar */
+.navbar-default .navbar-nav>li.logout-li>a {
+    padding: 0;
+}
+
+.addtable {
+    width: 100%;
+}
+table.ajaxCRUD {
+    width: 100%;
+}

@@ -1,0 +1,7 @@
+[07-Sep-2015 18:33:53 Europe/Budapest] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home/tagaster/public_html/connect.php on line 3
+[07-Sep-2015 18:33:53 Europe/Budapest] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/tagaster/public_html/connect.php on line 14
+[07-Sep-2015 18:34:13 Europe/Budapest] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home/tagaster/public_html/connect.php on line 3
+[07-Sep-2015 18:34:13 Europe/Budapest] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/tagaster/public_html/connect.php on line 14
+[07-Sep-2015 18:34:26 Europe/Budapest] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home/tagaster/public_html/connect.php on line 3
+[07-Sep-2015 18:34:26 Europe/Budapest] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/tagaster/public_html/connect.php on line 14
+[07-Sep-2015 18:47:36 Europe/Budapest] PHP Warning:  Invalid argument supplied for foreach() in /home/tagaster/public_html/rest-api/index.php on line 8
