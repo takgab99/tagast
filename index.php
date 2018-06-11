@@ -278,7 +278,7 @@ Fesztiválunk Szegeden a Vértónál, a Dugonics téren és még néhány belvá
 
 <div class="page-scroll">
     <a href="#programs">
-        <img class="arrow-down" src="img/sarga_nyil2.png" alt="">
+        <img class="arrow-down" src="img/feher_nyil2.png" alt="">
     </a>
 </div>
 
@@ -568,7 +568,7 @@ Fesztiválunk Szegeden a Vértónál, a Dugonics téren és még néhány belvá
 
 <div class="page-scroll">
     <a href="#contact">
-        <img class="arrow-down" src="img/lila_nyil2.png" alt="">
+        <img class="arrow-down" src="img/feher_nyil2.png" alt="">
     </a>
 </div>
 <!-- Gallery Section -->
@@ -602,7 +602,7 @@ Fesztiválunk Szegeden a Vértónál, a Dugonics téren és még néhány belvá
         <div class="row">
 
             <div class="col-sm-6 text-center">
-                <img src="img/logo-lila-2017.png" class="img-responsive" alt="">
+                <img src="img/logo-fekete.png" class="img-responsive" alt="">
                 <div class="col-sm-12 text-left" id="contact-text">
                     <p>Cím: 6724 Szeged, Hétvezér utca 5.</p>
                     <p>E-mail: tagasterfesztival@gmail.com</p>

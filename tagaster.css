@@ -255,7 +255,9 @@ section h2 {
 
 /* donate */
 #donate {
-	background-color: #ed008e;
+	/*background-color: #ed008e;*/
+    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2018/05/15114256/Artboard-1.jpg');
+    background-attachment: fixed;
 	color: white;
 	padding-top: 10px;
 	padding-bottom: 20px;
@@ -280,13 +282,16 @@ section h2 {
 /* about */
 #about {
 	 /* For Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(circle, #00c5d6, #1eadbb);
+    /*background: -webkit-radial-gradient(circle, #00c5d6, #1eadbb);*/
     /* For Opera 11.1 to 12.0 */
-    background: -o-radial-gradient(circle, #00c5d6, #1eadbb);
+    /*background: -o-radial-gradient(circle, #00c5d6, #1eadbb);*/
     /* For Fx 3.6 to 15 */
-    background: -moz-radial-gradient(circle, #00c5d6, #1eadbb);
+    /*background: -moz-radial-gradient(circle, #00c5d6, #1eadbb);*/
 	/* Standard syntax */
-    background: radial-gradient(circle, #00c5d6, #1eadbb);
+    /*background: radial-gradient(circle, #00c5d6, #1eadbb);*/
+
+    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2018/01/23175523/NEW-TO-CHURCH_.png');
+    background-attachment: fixed;
   
 	color: white;
 }
@@ -320,13 +325,14 @@ section h2 {
 }
 #programs {
 	 /* For Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(circle, #e7eb00, #cacd00);
+    /*background: -webkit-radial-gradient(circle, #e7eb00, #cacd00);*/
     /* For Opera 11.1 to 12.0 */
-    background: -o-radial-gradient(circle, #e7eb00, #cacd00);
+    /*background: -o-radial-gradient(circle, #e7eb00, #cacd00);*/
     /* For Fx 3.6 to 15 */
-    background: -moz-radial-gradient(circle, #e7eb00, #cacd00);
+    /*background: -moz-radial-gradient(circle, #e7eb00, #cacd00);*/
 	/* Standard syntax */
-    background: radial-gradient(circle, #e7eb00, #cacd00);
+    /*background: radial-gradient(circle, #e7eb00, #cacd00);*/
+    background: white;
 	color: #19171A;
 }
 #programs .programs-link {
@@ -367,8 +373,11 @@ section h2 {
 
 /* PARTNEREK */
 #partners {
-	background-color: white;
-	color: #19171A;
+	/*background-color: white;*/
+    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2016/12/29164714/Home_London_background.jpg');
+    background-attachment: fixed;
+	/*color: #19171A;*/
+    color: white;
 }
 #partners .partner-link-wrapper {
 	display: inline-block;
@@ -398,15 +407,15 @@ section h2 {
 /* KONTAKT */
 #contact {
 	 /* For Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(circle, #ed008e, #bf0072);
+    /*background: -webkit-radial-gradient(circle, #ed008e, #bf0072);*/
     /* For Opera 11.1 to 12.0 */
-    background: -o-radial-gradient(circle, #ed008e, #bf0072);
+    /*background: -o-radial-gradient(circle, #ed008e, #bf0072);*/
     /* For Fx 3.6 to 15 */
-    background: -moz-radial-gradient(circle, #ed008e, #bf0072);
+    /*background: -moz-radial-gradient(circle, #ed008e, #bf0072);*/
 	/* Standard syntax */
-    background: radial-gradient(circle, #ed008e, #bf0072);
-    
-	color: white;
+    /*background: radial-gradient(circle, #ed008e, #bf0072);*/
+    /*background: ;*/
+	color: black;
 }
 #contact .contact-title {
 	font-size: 28px;
@@ -443,7 +452,7 @@ section h2 {
 header {
     text-align: center;
     color: #fff;
-    background: #F19300;
+    background: white;
 }
 header .container {
     padding-top: 52px;
