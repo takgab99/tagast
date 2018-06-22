@@ -247,9 +247,32 @@ getCounter("main");
             <div class="col-sm-2 portfolio-item text-center">
             </div>
             <div class="col-sm-8 portfolio-item text-center">
-							<p>A 2017-es Tágas Tér Fesztivál alkalmával egy újabb találkozásra hívunk mindenkit! Az az álmunk, hogy – ha csak egy rövid időre is – megnyíljon egy tér, ahol őszintén találkozhatunk egymással. <b>Szeptember 8-10</b>. között egy olyan helyet hívunk életre, ahol mindenki kaphat és adhat. A Tágas Tér Fesztivál egy olyan pontja a világnak, amelyben ledőlnek a korlátok, megszűnnek a szakadékok és feltárulnak a lehetőségek.</p>
-<p>Több mint 80 önálló program, kezdeményezés, koncertek, előadások, beszélgetések, kiállítások, játék és sport. Olyan csatornák, amelyen keresztül valósággá válhat mindaz, amire mindannyian vágyunk: egy sokszínű és célokkal teli élet, amelyet érdemes élni. Ennek megtapasztalására hívunk hát minden kedves érdeklődőt Szegedre 2017 szeptemberében.
-Fesztiválunk Szegeden a Vértónál, a Dugonics téren és még néhány belvárosi helyszínen valósul meg. Vasárnap Mórahalmon is nyitunk egy helyszínt. Minden egyes programpontnak önálló karaktere és üzenete lesz, ahol párhuzamosan zajlanak majd az események, így a látogató a programok közötti választás kényszerével, ugyanakkor szépségével fog szembesülni.</p>
+                <p>Küldetésünk</p>
+                
+                <p><i>„Izsák szolgái a völgyben is ástak, és megtalálták ott az élő víz kútját. De ott is civakodni kezdtek Gerár pásztorai Izsák pásztoraival: »Miénk a víz!« Ezért arról, ami ott történt, elnevezte a kutat Eszeknek (azaz Civakodásnak), mivel civakodtak vele. Másikat is ástak, amiatt is civakodtak, ezért elnevezte azt Szitnának (azaz Ellenségeskedésnek). Erre elment onnan, és ásott egy másik kutat. Emiatt nem civakodtak, elnevezte tehát Rehobótnak (azaz Tágas térnek) mondván: »Most tágas teret adott az Úr nekünk, s megadta, hogy sokasodjunk ezen a földön.”</i></p>
+
+                <p>A Tágas Tér az a hely, ahol minden ember találkozhat. Egy hely, ahová eljövünk az élő vízért és ahol megosztjuk egymással azokat a javakat, amelyeket az Úr adott számunkra. Mindannyiunk szívében ott rejlenek a Lélek ajándékai, amelyek arra várnak, hogy használjuk őket a reánk bízottak javára. A Tágas Tér azért jött létre, hogy keresd, elhozd és átadd azt, ami benned van.</p>
+
+                <p>Az egyház akkor tudott igazán sokat adni Krisztusból, amikor tagjai elfogadták a küldetést, amit az Úrtól kaptak. A mai világnak arra van szüksége, hogy őszintén, bátran és Istenre figyelve el kezdjük használni a bennünk lévő adományokat.</p>
+
+                <p>Megtaláltuk az élő víz kútját és Jézus most arra hív bennünket, hogy együtt, egységben járuljunk oda hozzá meríteni a vízből. Ha azt szeretnénk, hogy sokasodjon az Úr népe, akkor egységben, egymásra figyelve, egymástól tanulva kell végeznünk küldetésünket.</p>
+
+                <p>Merítsünk a kútból és tegyük termővé a kietlen pusztaságot!</p>
+
+                <h3>Mérföldkövek:</h3>
+
+                <h4>2015</h4>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VgDLEvNB34E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                <iframe src="https://player.vimeo.com/video/142774077?title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                <h4>2017</h4>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JkbawGfR2nY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/P6MoHY-f8OM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
             </div>
         </div>
         <div class="row">
