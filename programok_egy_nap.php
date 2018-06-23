@@ -13,7 +13,6 @@ while ($locale = mysqli_fetch_array($result_locales, MYSQLI_ASSOC)) {
     <thead>
     <tr>
         <th>Program</th>
-        <th>Helyszín</th>
     </tr>
     </thead>
     <tbody>
@@ -33,8 +32,7 @@ while ($locale = mysqli_fetch_array($result_locales, MYSQLI_ASSOC)) {
             }
 
             print '<tr id="program-item" data-id="' . $program['id'] . '"><td><div class="time">'.substr($program['start_time'], 0, -3) . $endTime . '</div>';
-            print '<div class="name">'. $program['name'] . '</div></td>';
-            print '<td><div class="locale">' . $locales[$program['locale_id']] . '</div></td></tr>';
+            print '<div class="name">'. $program['name'] . '</div></td></tr>';
             print '</tr>';
             print '<tr><td id="description-' . $program['id'] . '" class="description" colspan="2">' . $desc . '</td></tr>';
         }

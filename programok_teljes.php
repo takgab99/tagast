@@ -8,21 +8,21 @@ $result_locales = $mysqli->query("SELECT * FROM locales");
 <div id="accordion" class="ui-accordion ui-widget ui-helper-reset">
 <?php
 while ($locale = mysqli_fetch_array($result_locales, MYSQLI_ASSOC)) {
-		$wrapperId = strtolower($locale['name']);
-		$raplaceChar = array("á");
-		$wrapperId = str_replace($raplaceChar, "a", $wrapperId);
-		$raplaceChar = array("é");
-		$wrapperId = str_replace($raplaceChar, "e", $wrapperId);
-		$raplaceChar = array("í");
-		$wrapperId = str_replace($raplaceChar, "i", $wrapperId);
-		$raplaceChar = array("ü","ű","ú");
-		$wrapperId = str_replace($raplaceChar, "u", $wrapperId);
-		$raplaceChar = array("ö","ő","ó");
-		$wrapperId = str_replace($raplaceChar, "o", $wrapperId);
-		$raplaceChar = array(" ");
-		$wrapperId = str_replace($raplaceChar, "-", $wrapperId);
-		$raplaceChar = array("(",")","?",".",",",";","\"","'","!");
-		$wrapperId = str_replace($raplaceChar, "", $wrapperId);
+    $wrapperId = strtolower($locale['name']);
+    $raplaceChar = array("á");
+    $wrapperId = str_replace($raplaceChar, "a", $wrapperId);
+    $raplaceChar = array("é");
+    $wrapperId = str_replace($raplaceChar, "e", $wrapperId);
+    $raplaceChar = array("í");
+    $wrapperId = str_replace($raplaceChar, "i", $wrapperId);
+    $raplaceChar = array("ü","ű","ú");
+    $wrapperId = str_replace($raplaceChar, "u", $wrapperId);
+    $raplaceChar = array("ö","ő","ó");
+    $wrapperId = str_replace($raplaceChar, "o", $wrapperId);
+    $raplaceChar = array(" ");
+    $wrapperId = str_replace($raplaceChar, "-", $wrapperId);
+    $raplaceChar = array("(",")","?",".",",",";","\"","'","!");
+    $wrapperId = str_replace($raplaceChar, "", $wrapperId);
     $days = array();
     $days[1] = array();     //Friday
     $days[2] = array();     //Saturday
@@ -45,7 +45,6 @@ while ($locale = mysqli_fetch_array($result_locales, MYSQLI_ASSOC)) {
             <tr>
                 <th><?php print $day_names[1]; ?></th>
                 <th><?php print $day_names[2]; ?></th>
-                <th><?php print $day_names[3]; ?></th>
             </tr>
         </thead>
         <tbody>
@@ -79,24 +78,11 @@ while ($locale = mysqli_fetch_array($result_locales, MYSQLI_ASSOC)) {
                 else print '<td>';
                 print '</td>';
                 ?>
-                <?php
-                if (isset($days[3][$i])) {
-                    print '<td id="program-item" data-id="' . $days[3][$i]['id'] .'">';
-                    $endTime = NULL;
-                    if ($days[3][$i]['end_time']) {
-                        $endTime = '-'.substr($days[3][$i]['end_time'], 0, -3);
-                    }
-                    print '<div class="time">'.substr($days[3][$i]['start_time'], 0, -3) . $endTime . '</div>';
-                    print '<div class="name">'. $days[3][$i]['name'] . '</div>';
-                }
-                else print '<td>';
-                print '</td>';
-                ?>
             </tr>
             <?php
             print '<tr class="desc-row-' . $i . '"><td colspan="3">';
 
-            for ($j = 1; $j <=3; $j++) {
+            for ($j = 1; $j <=2; $j++) {
                 if (isset($days[$j][$i])) {
                     if ($days[$j][$i]['description']) {
                         $desc = $days[$j][$i]['description'];

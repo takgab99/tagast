@@ -28,9 +28,8 @@ getCounter();
 
 
 $day_names = array();
-$day_names[1] = "Szeptember 8. Péntek";
-$day_names[2] = "Szeptember 9. Szombat";
-$day_names[3] = "Szeptember 10. Vasárnap";
+$day_names[1] = "Szeptember 15. Szombat";
+$day_names[2] = "Szeptember 16. Vasárnap";
 if (isset($_GET['nap'])) $actDay = $_GET['nap'];
 else $actDay = 0;
 
@@ -56,9 +55,8 @@ else $actDay = 0;
                 $activeMenu[$actDay] = 'active';
                 ?>
                 <div class="submenu-item <?php print $activeMenu[0]; ?>"><a href="programok.php">TELJES PROGRAM</a></div>
-                <div class="submenu-item <?php print $activeMenu[1]; ?>"><a href="?nap=1">PÉNTEK/08</a></div>
-                <div class="submenu-item <?php print $activeMenu[2]; ?>"><a href="?nap=2">SZOMBAT/09</a></div>
-                <div class="submenu-item <?php print $activeMenu[3]; ?>"><a href="?nap=3">VASÁRNAP/10</a></div>
+                <div class="submenu-item <?php print $activeMenu[1]; ?>"><a href="?nap=1">SZOMBAT/15</a></div>
+                <div class="submenu-item <?php print $activeMenu[2]; ?>"><a href="?nap=2">VASÁRNAP/16</a></div>
             </div>
         </div>
         <div class="row">
@@ -71,7 +69,7 @@ if (!isset($_GET['nap'])) {
     include("programok_teljes.php");
 }
 else {
-    include("programok_pentek.php");
+    include("programok_egy_nap.php");
 }
 ?>
 

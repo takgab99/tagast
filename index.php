@@ -244,11 +244,11 @@ getCounter("main");
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-2 portfolio-item text-center">
+            <div class="col-md-2 portfolio-item text-center">
             </div>
-            <div class="col-sm-8 portfolio-item text-center">
+            <div class="col-md-8 portfolio-item text-center">
                 <p>Küldetésünk</p>
-                
+
                 <p><i>„Izsák szolgái a völgyben is ástak, és megtalálták ott az élő víz kútját. De ott is civakodni kezdtek Gerár pásztorai Izsák pásztoraival: »Miénk a víz!« Ezért arról, ami ott történt, elnevezte a kutat Eszeknek (azaz Civakodásnak), mivel civakodtak vele. Másikat is ástak, amiatt is civakodtak, ezért elnevezte azt Szitnának (azaz Ellenségeskedésnek). Erre elment onnan, és ásott egy másik kutat. Emiatt nem civakodtak, elnevezte tehát Rehobótnak (azaz Tágas térnek) mondván: »Most tágas teret adott az Úr nekünk, s megadta, hogy sokasodjunk ezen a földön.”</i></p>
 
                 <p>A Tágas Tér az a hely, ahol minden ember találkozhat. Egy hely, ahová eljövünk az élő vízért és ahol megosztjuk egymással azokat a javakat, amelyeket az Úr adott számunkra. Mindannyiunk szívében ott rejlenek a Lélek ajándékai, amelyek arra várnak, hogy használjuk őket a reánk bízottak javára. A Tágas Tér azért jött létre, hogy keresd, elhozd és átadd azt, ami benned van.</p>
@@ -316,67 +316,35 @@ getCounter("main");
         </div>
 
         <div class="row">
-            <div class="col-sm-3 programs-item"></div>
-            <div class="col-sm-6 programs-item text-center">
-                <div class="caption">
-                    <div class="caption-content">
-                    </div>
-                </div>
-                <a class="main-programs" href="programok.php#verto	">
-									<!--<img src="http://static.panoramio.com/photos/large/11393816.jpg" class="img-responsive" alt="Liget" title="Liget">-->
-									<div class="program-place-name text-center">Vértó</div>
-								</a>
+            <div class="col-md-4 col-md-offset-2 col-sm-6 programs-item text-center">
+                <p><b>SZEPTEMBER 15. DE.</b></p>
+                <span>9:00 | Református Egyetemi Dicsőítők<br>
+                    <i>Czagány Gábor</i> • <i>Martin Smith</i></span>
+                <p></p>
+                <p><b>SZEPTEMBER 15. DU.</b></p>
+                <span>13:00 | 1. szeminárium<br>
+                    <i>László Viktor</i> • <i>Püski Dániel</i><br>
+                    • <i>Matt Edwards</i> • <i>Gál Dávid</i><br></span>
+<p></p>
+                <span>15:30 | 2. szeminárium<br>
+                    <i>Dobner Illés</i> • <i>Sipos Márk</i><br>
+                    • <i>Matt Edwards</i> • <i>Botár Balázs</i><br></span>
+<p></p>
+                <span>17:00 | Esti dicsőítés<br>
+                    <i>Szegedi Baptista Ifjúsági Dicsőítők</i> • <i>Martin Smith Band</i></span>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 programs-item"></div>
-            <div class="col-sm-6 programs-item text-center">
-                <div class="caption">
-                    <div class="caption-content">
-                    </div>
-                </div>
-                <a class="main-programs" href="programok.php#dugonics-ter">
-									<!--<img src="img/helyszinek_kep_szinpad.png" class="img-responsive" alt="Újszegedi Szabadtéri Színpad" title="Újszegedi Szabadtéri Színpad">-->
-									<div class="program-place-name text-center">Dugonics tér</div>
-								</a>
-            </div>        </div>
-        <div class="row">
-            <div class="col-sm-3 programs-item"></div>
-            <div class="col-sm-6 programs-item text-center">
-                <div class="caption">
-                    <div class="caption-content">
-                    </div>
-                </div>
-                <a class="main-programs" href="programok.php#haromszog-evangelikus-templom-es-kornyeke">
-									<!--<img src="img/helyszinek_kep_szte.png" class="img-responsive" alt="Tudomány sátor" title="Tudomány sátor">-->
-									<div class="program-place-name text-center">Háromszög (evangélikus templom és környéke)</div>
-								</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 programs-item"></div>
-            <div class="col-sm-6 programs-item text-center">
-                <div class="caption">
-                    <div class="caption-content">
-                    </div>
-                </div>
-                <a class="main-programs" href="programok.php#ih-rendezvenykozpont">
-                    <!--<img src="img/helyszinek_kep_szte.png" class="img-responsive" alt="Tudomány sátor" title="Tudomány sátor">-->
-                    <div class="program-place-name text-center">IH Rendezvényközpont</div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 programs-item"></div>
-            <div class="col-sm-6 programs-item text-center">
-                <div class="caption">
-                    <div class="caption-content">
-                    </div>
-                </div>
-                <a class="main-programs" href="programok.php#morahalom">
-                    <!--<img src="img/helyszinek_kep_szte.png" class="img-responsive" alt="Tudomány sátor" title="Tudomány sátor">-->
-                    <div class="program-place-name text-center">Mórahalom</div>
-                </a>
+            <div class="col-md-4 col-sm-6 programs-item text-center">
+                <p><b>SZEPTEMBER 16. DE.</b></p>
+                <span>10:00 | Felekezetközi istentisztelet<br>
+                    <i>Kyle Eckhart</i> • <i>Dobner Illés</i></span>
+<p></p>
+                <p><b>SZEPTEMBER 16. DU.</b></p>
+                <span>13:00 | Szeminárium<br>
+                    <i>K.Ö.D.</i> • <i>Ferenczy Csaba és Valkai Ildikó</i> • <i>SzabadOn</i><br></span>
+
+                <span>19:00 | Esti dicsőítés<br>
+                    <i>Sipos Márk</i> • <i>Csiszér László és zenekara</i></span>
+
             </div>
         </div>
         <div class="row">

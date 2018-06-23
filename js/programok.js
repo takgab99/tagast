@@ -4,7 +4,8 @@
 $(function() {
 		
 		$.each($('.ui-accordion .ui-accordion-header'),function(index,value){
-			$(value).next().hide()
+			$(value).next().show();
+            $(value).addClass('ui-state-active')
 		});
 		$('.ui-accordion .ui-accordion-header').click(function() {
 			if ($(this).hasClass('ui-state-active')){
