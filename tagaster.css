@@ -335,6 +335,9 @@ section h2 {
     background: white;
 	color: #19171A;
 }
+#programs h2 {
+    margin-bottom: 34px;
+}
 #programs .programs-link {
     display: block;
     position: relative;

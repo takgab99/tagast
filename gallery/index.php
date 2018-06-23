@@ -263,7 +263,7 @@ Fesztiválunk Szegeden a Vértónál, a Dugonics téren és néhány belvárosi 
                 </div>
             </div -->
             <div class="col-sm-12 portfolio-item text-center question">
-                <p>Kérdése van? Írjon nekünk: <a href="mailto:tagasterfesztival@gmail.com">tagasterfesztival@gmail.com</a></p>
+                <p>Kérdésed van? Írj nekünk: <a href="mailto:tagasterfesztival@gmail.com">tagasterfesztival@gmail.com</a></p>
             </div>
         </div>
 
@@ -599,7 +599,7 @@ Fesztiválunk Szegeden a Vértónál, a Dugonics téren és néhány belvárosi 
 	
             </div>
             <div class="col-sm-6 text-center">
-                <h2 class="text-left">Írjon nekünk!</h2>
+                <h2 class="text-left">Írj nekünk!</h2>
                 <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                 <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
                 <form name="sentMessage" id="contactForm" novalidate>

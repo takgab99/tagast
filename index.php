@@ -286,7 +286,7 @@ getCounter("main");
                 </div>
             </div -->
             <div class="col-sm-12 portfolio-item text-center question">
-                <p>Kérdése van? Írjon nekünk: <a href="mailto:tagasterfesztival@gmail.com">tagasterfesztival@gmail.com</a></p>
+                <p>Kérdésed van? Írj nekünk: <a href="mailto:tagasterfesztival@gmail.com">tagasterfesztival@gmail.com</a></p>
             </div>
         </div>
 
@@ -311,9 +311,11 @@ getCounter("main");
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>— Főbb helyszínek —</h2>
+                <h2>— Program —</h2>
+                <p>Helyszín: Ifjúsági ház, Szeged</p>
             </div>
         </div>
+        <p></p>
 
         <div class="row">
             <div class="col-md-4 col-md-offset-2 col-sm-6 programs-item text-center">
@@ -601,7 +603,7 @@ getCounter("main");
 	
             </div>
             <div class="col-sm-6 text-center">
-                <h2 class="text-left">Írjon nekünk!</h2>
+                <h2 class="text-left">Írj nekünk!</h2>
                 <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                 <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
                 <form name="sentMessage" id="contactForm" novalidate>
