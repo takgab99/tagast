@@ -130,8 +130,33 @@ getCounter("main");
     </div>
 </header>
 
+<section id="registration">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>— Regisztráció —</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p><b>Szeptember 15</b>-én a belépés jegyvásárláshoz és regisztrációhoz kötött. Jegyedet megvásárolhatod a <a href="http://jegy.hu" target="_blank">www.jegy.hu</a> oldalon.</p>
 
-<!-- Donate -->
+                <p><b>Szeptember 16</b>-án a belépés ingyenes!</p>
+
+                <p style="margin-top: 20px;"><b>Add meg a jegyen szereplő regisztrációs kódodat:</b></p>
+
+                <form id="ticket-register" action="regisztracio.php" method="POST" role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control ticket-id-lg" name="ticket-pre-register" placeholder="Írd ide a kódot">
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Tovább"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Donate
 <section id="donate">
 	<div class="container">
         <div class="row">
@@ -149,7 +174,7 @@ getCounter("main");
             </div>
   		</div>
   </div>
-</section>
+</section> -->
 
 <!-- News Grid Section -->
 <section id="news">
