@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
     .navbar-fixed-top .navbar-brand img {
         /*width: 71px;*/
-        height: 73px;
+        height: 60px;
         margin-top: -7px;
     }
     .navbar-fixed-top.navbar-shrink .navbar-brand img {
@@ -126,6 +126,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
     .navbar .navbar-nav {
         margin-bottom: -7px;
+    }
+
+    .navbar-fixed-top .navbar-brand img {
+        /*width: 71px;*/
+        height: 73px;
+        margin-top: -7px;
     }
 }
 
@@ -252,11 +258,44 @@ section h2 {
 	height: auto;
   width: auto;
 }
+.intro-image-container {
+    background: url('img/hatter-2018-1.png');
+    background-size: cover;
+    height: 712px;
+}
+
+.intro-image-container h1 {
+    font-size: 40px;
+    position: relative;
+    top: 50%;
+}
+.intro-image-container .subtitle {
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+}
+@media (min-width: 768px) {
+    .intro-image-container h1 {
+        font-size: 60px;
+        margin-top: -11px;
+    }
+    .intro-image-container .subtitle {
+        font-size: 32px;
+    }
+}
+@media (min-width: 992px) {
+    .intro-image-container h1 {
+        font-size: 75px;
+    }
+}
+
+/* SLIDER end */
+
 
 /* donate */
 #donate {
 	/*background-color: #ed008e;*/
-    background: url('img/hatter-2018-1.jpg');
+    background: url('img/hatter-2018-1.png');
     background-attachment: fixed;
     background-size: cover;
 	color: white;
@@ -267,7 +306,7 @@ section h2 {
 
 /* Registration section and page ---> */
 #registration {
-    background: url('img/hatter-2018-1.jpg');
+    background: url('img/hatter-2018-2.png');
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -285,7 +324,7 @@ section h2 {
     margin-top: 10px;
 }
 .registration-page #registration-title {
-    background: url('img/hatter-2018-1.jpg');
+    background: url('img/hatter-2018-1.png');
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -320,7 +359,7 @@ section h2 {
 	/* Standard syntax */
     /*background: radial-gradient(circle, #00c5d6, #1eadbb);*/
 
-    background: url('img/hatter-2018-1.jpg');
+    background: url('img/hatter-2018-1.png');
     background-attachment: fixed;
     background-size: cover;
   
@@ -450,7 +489,7 @@ section h2 {
     /*background: radial-gradient(circle, #ed008e, #bf0072);*/
     /*background: ;*/
 	color: white;
-    background: url('img/hatter-2018-1.jpg');
+    background: url('img/hatter-2018-3.png');
     background-attachment: fixed;
     background-size: cover;
 }

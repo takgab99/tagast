@@ -13,7 +13,7 @@ include("lib.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tágas Tér Fesztivál - 2017.</title>
+    <title>Tágas Tér Konferencia</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -71,60 +71,10 @@ getCounter("main");
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Bible verse 
-                    <div class="text-fix">
-                        <p class="bible-verse">"Tágas térre vitt ki engem, megmentett, mert gyönyörködik bennem."</p>
-                        <p class="bible-verse-location">/Zsoltárok 18:20/</p>
-                    </div>-->
-                    <!-- Indicators -->
-                    <?php
-                    $query = $mysqli->query("SELECT * FROM slider ORDER BY weight ASC");
-                    $numQuery = mysqli_num_rows($query);
-                    ?>
-                    <ol class="carousel-indicators">
-                    <?php
-                    for ($i = 0; $i<$numQuery; $i++) {
-                    ?>
-                        <li data-target="#carousel-example-generic" data-slide-to="<?php print $i; ?>"<?php if ($i==0) print " class='active'"; ?>></li>
-                        <?php
-                    }
-                        ?>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <!-- <div class="item active">
-                            <img src="img/slider-kepek-igevers.JPG" alt="...">
-                            <!--<div class="carousel-caption">
-                                "Tágas térre vitt ki engem,megmentett,mert gyönyörködik bennem."<br>
-                                /Zsoltárok 18:20/
-                            </div>
-                        </div>-->
-                        <?php
-                        $first = TRUE;
-                        while ($item = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
-                        ?>
-                        <div class="item<?php if ($first) { print " active"; $first = FALSE; } ?>">
-                            <img src="img/slider/<?php print $item['image']; ?>" alt="<?php print $item['text']; ?>" style="margin: auto;">
-                        </div>
-                        <?php
-                        }
-                        ?>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <img src="img/nyil_balra.png" class="glyphicon glyphicon-chevron-left">
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <img src="img/nyil_jobbra.png" class="glyphicon glyphicon-chevron-right">
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
+            <div class="col-lg-12 intro-image-container text-center">
+                <h1>Tágas Tér Konferencia</h1>
+                <div class="subtitle">Szeptember 15-16.</div>
+                <div class="subtitle">Ifjúsági Ház, Szeged</div>
             </div>
         </div>
     </div>
@@ -492,7 +442,7 @@ getCounter("main");
         <div class="row" id="labjegyzet">
             <div class="col-sm-12 text-center">
                 <hr>
-                <p>© Tágas Tér Fesztivál 2018</p>
+                <p>© Tágas Tér Konferencia 2018</p>
             </div>
         </div>
         <div class="row">
