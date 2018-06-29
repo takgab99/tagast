@@ -47,13 +47,13 @@ $(function () {
             second_seminar: second_seminar
           },
           cache: false,
-          success: function () {
+          success: function (data) {
             // Success message
             $('#register-success').html("<div class='alert alert-success'>");
             $('#register-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
               .append("</button>");
             $('#register-success > .alert-success')
-              .append("<strong>A regisztrációdat elmentettük. </strong>");
+              .append("<strong>" + data + "</strong>");
             $('#register-success > .alert-success')
               .append('</div>');
 

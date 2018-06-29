@@ -406,11 +406,11 @@ getCounter("main");
     </div>
 </section>
 
-<div class="page-scroll text-center">
-    <a href="#partners">
-        <img class="arrow-down" src="img/feher_nyil2.png" alt="">
-    </a>
-</div>
+<!--<div class="page-scroll text-center">-->
+<!--    <a href="#partners">-->
+<!--        <img class="arrow-down" src="img/feher_nyil2.png" alt="">-->
+<!--    </a>-->
+<!--</div>-->
 
 <div class="page-scroll">
     <a href="#contact">

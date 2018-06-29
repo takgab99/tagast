@@ -16,24 +16,22 @@ while ($registration = mysqli_fetch_array($ticket_query, MYSQLI_ASSOC)) {
   $update_count = $registration['update_count'] + 1;
 }
 
-$message = 'Valami hiba történt!';
+$message = '';
 if ($update_count > 0) {
   $query = $mysqli->query("UPDATE `registration2018` 
                           SET `ticket_id` = '" . $ticket_id . "', `name` =  '" . $name . "', `city` = '" . $city . "',
                           `community` = '" . $community . "', `first_seminar` = '" . $first_seminar . "',
                           `second_seminar` = '" . $second_seminar . "', `update_count` = '" . $update_count . "'
                           WHERE id = '" . $update_id . "'");
-
-  $message = "Errormessage: " . $mysqli->error;
-  $message .= 'A regisztraciodat modosítottuk!';
+//  $message = "Errormessage: " . $mysqli->error;
+  $message .= 'A regisztrációdat modosítottuk!';
 }
 else {
   $query = $mysqli->query("INSERT INTO `registration2018` (`ticket_id`, `name`, `city`, `community`, `first_seminar`, `second_seminar`, `update_count`) 
                         VALUES('" . $ticket_id . "', '" . $name . "', '" . $city . "', '" . $community . "', 
                         '" . $first_seminar . "', '" . $second_seminar . "', '" . $update_count ."')");
-  $message = "Errormessage: " . $mysqli->error;
+//  $message = "Errormessage: " . $mysqli->error;
   $message .= 'A regisztrációdat elmentettük!';
 }
 print $message;
-print $first_seminar;
 ?>
