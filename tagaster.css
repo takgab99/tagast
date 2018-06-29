@@ -256,8 +256,9 @@ section h2 {
 /* donate */
 #donate {
 	/*background-color: #ed008e;*/
-    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2018/05/15114256/Artboard-1.jpg');
+    background: url('img/hatter-2018-1.jpg');
     background-attachment: fixed;
+    background-size: cover;
 	color: white;
 	padding-top: 10px;
 	padding-bottom: 20px;
@@ -266,7 +267,8 @@ section h2 {
 
 /* Registration section and page ---> */
 #registration {
-    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2018/05/15114256/Artboard-1.jpg');
+    background: url('img/hatter-2018-1.jpg');
+    background-size: cover;
     background-attachment: fixed;
     color: white;
 }
@@ -283,7 +285,8 @@ section h2 {
     margin-top: 10px;
 }
 .registration-page #registration-title {
-    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2018/05/15114256/Artboard-1.jpg');
+    background: url('img/hatter-2018-1.jpg');
+    background-size: cover;
     background-attachment: fixed;
     color: white;
 }
@@ -317,8 +320,9 @@ section h2 {
 	/* Standard syntax */
     /*background: radial-gradient(circle, #00c5d6, #1eadbb);*/
 
-    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2018/01/23175523/NEW-TO-CHURCH_.png');
+    background: url('img/hatter-2018-1.jpg');
     background-attachment: fixed;
+    background-size: cover;
   
 	color: white;
 }
@@ -446,8 +450,9 @@ section h2 {
     /*background: radial-gradient(circle, #ed008e, #bf0072);*/
     /*background: ;*/
 	color: white;
-    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2018/05/15114256/Artboard-1.jpg');
+    background: url('img/hatter-2018-1.jpg');
     background-attachment: fixed;
+    background-size: cover;
 }
 #contact .contact-title {
 	font-size: 28px;
