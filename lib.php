@@ -54,6 +54,9 @@ function getNavBar($main = "") {
                         <a href="<?php SITE_URL ?><?php print $mainPath; ?>#page-top">Főoldal</a>
                     </li>
                     <li class="page-scroll">
+                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#registration">Regisztráció</a>
+                    </li>
+                    <li class="page-scroll">
                         <a href="<?php SITE_URL ?><?php print $mainPath; ?>#news">Hírek</a>
                     </li>
                     <li class="page-scroll" id="menu-about">
@@ -61,9 +64,6 @@ function getNavBar($main = "") {
                     </li>
                     <li class="page-scroll" id="menu-programs">
                         <a href="<?php SITE_URL ?><?php print $mainPath; ?>#programs">Programok</a>
-                    </li>
-                    <li class="page-scroll" id="menu-partners">
-                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#partners">Partnerek</a>
                     </li>
                     <!-- li class="page-scroll" id="menu-gallery">
                         <a href="<?php SITE_URL ?><?php print $mainPath; ?>#gallery">Galéria</a>

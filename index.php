@@ -283,23 +283,36 @@ getCounter("main");
                 <p>Megtaláltuk az élő víz kútját és Jézus most arra hív bennünket, hogy együtt, egységben járuljunk oda hozzá meríteni a vízből. Ha azt szeretnénk, hogy sokasodjon az Úr népe, akkor egységben, egymásra figyelve, egymástól tanulva kell végeznünk küldetésünket.</p>
 
                 <p>Merítsünk a kútból és tegyük termővé a kietlen pusztaságot!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 portfolio-item text-center">
 
                 <h3>Mérföldkövek:</h3>
 
-                <h4>2015</h4>
+                <div class="row">
+                    <h4>2015</h4>
+                    <div class="col-md-6 portfolio-item text-center">
+                        <iframe width="500" height="281" src="https://www.youtube.com/embed/VgDLEvNB34E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 portfolio-item text-center">
+                        <iframe src="https://player.vimeo.com/video/142774077?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VgDLEvNB34E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-                <iframe src="https://player.vimeo.com/video/142774077?title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-                <h4>2017</h4>
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JkbawGfR2nY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/P6MoHY-f8OM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                <div class="row">
+                    <h4>2017</h4>
+                    <div class="col-md-6 portfolio-item text-center">
+                        <iframe width="500" height="281" src="https://www.youtube.com/embed/JkbawGfR2nY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 portfolio-item text-center">
+                        <iframe width="500" height="281" src="https://www.youtube.com/embed/P6MoHY-f8OM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
+
+
         <div class="row">
             <!-- div class="col-lg-8 col-lg-offset-2 text-center">
                 <div class="btn-group">

@@ -282,6 +282,11 @@ section h2 {
 .registration-page #register-form label {
     margin-top: 10px;
 }
+.registration-page #registration-title {
+    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2018/05/15114256/Artboard-1.jpg');
+    background-attachment: fixed;
+    color: white;
+}
 
 /* <-- Registration page */
 
