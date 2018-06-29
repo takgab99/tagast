@@ -311,7 +311,7 @@ getCounter("main");
                 </div>
             </div -->
             <div class="col-sm-12 portfolio-item text-center question">
-                <p>Kérdésed van? Írj nekünk: <a href="mailto:tagasterfesztival@gmail.com">tagasterfesztival@gmail.com</a></p>
+                <p>Kérdésed van? Írj nekünk: <a href="mailto:info@tagaster.hu">tagasterfesztival@gmail.com</a></p>
             </div>
         </div>
 
@@ -399,191 +399,6 @@ getCounter("main");
     </a>
 </div>
 
-<!-- Partners Section -->
-<section id="partners" class="success">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>— Kezdeményező közösségek —</h2>
-            </div>
-        </div>
-				<div class="row partner-icons">
-            <div class="col-sm-2 portfolio-item">
-            </div>
-            <div class="col-sm-8 portfolio-item">
-							<div class="partner-link-wrapper">
-								<a href="http://uniref-szeged.hu" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/szegedi_reformatus_egyetemi_gyulekezet_logo.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://szeged.lutheran.hu" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/szegedi_evangelikus_egyhazkozseg_logo.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://baptistaszeged.hu" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/szegedi_baptista_gyulekezet_logo.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://www.fokolare.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/fokolare_logo.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://www.fogadalmitemplom.hu/" class="partner-link" target="_blank" data-toggle="modal" >
-									<img src="img/sponsors/2017/plebania_logo.png" class="img-responsive" alt="" style="height: 125px;">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://www.ujremeny.hu/szeged" class="partner-link" target="_blank" data-toggle="modal" >
-									<img src="img/sponsors/2017/szegedi_baptista_gyulekezet_logo.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<!-- div class="partner-link-wrapper">
-								<a href="http://www.szeged-csanad.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/szeged-csanadi-egyhazmegye.png" class="img-responsive" alt="">
-								</a>
-							</div -->
-            </div>
-            <div class="col-sm-2 portfolio-item">
-            </div>
-				</div>
-<div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>— Támogatók —</h2>
-            </div>
-        </div>
-        <div class="row partner-icons">
-            <div class="col-sm-2 portfolio-item">
-            </div>
-            <div class="col-sm-8 portfolio-item">
-							<div class="partner-link-wrapper">
-								<a href="http://www.nka.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/NKA_csak_logo_rgb.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://del.lutheran.hu/nyitolap" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/deli_evangelikus_egyhazkerulet_logo.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://www.szeged-csanad.egyhazmegye.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/szeged_csanadi_egyhazmegye_logo.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://reformacio2017.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/ref_500.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="https://www.it-services.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/itsh.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://recruitmentsolutions.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/rs.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://kezdolap.plasmacentrum.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/vascularplazma.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://www.coopszeged.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/coop_szeged_zrt_logo.png" class="img-responsive" alt="" style="height: 84px;">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="https://www.otpbank.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/otp.png" class="img-responsive" alt="" style="height: 92px;">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://www.mediamotion.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/jarmureklam.png" class="img-responsive" alt="" style="height: 109px;">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://civil.info.hu/web/nea" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/nemzeti_egyutmukodesi_alap.png" class="img-responsive" alt="" style="width: 320px;">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="https://szeka.ujevangelizacio.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/katolikus_alapitvany.png" class="img-responsive" alt="" style="width: 190px;">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="https://www.fornetti.hu/mainpage_hu" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/fornetti.png" class="img-responsive" alt="" style="width: 125px;">
-								</a>
-							</div>
-            </div>
-            <div class="col-sm-2 portfolio-item">
-            </div>
-				</div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>— Partnerek —</h2>
-            </div>
-        </div>
-				<div class="row partner-icons">
-            <div class="col-sm-2 portfolio-item">
-            </div>
-            <div class="col-sm-8 portfolio-item">
-							<div class="partner-link-wrapper">
-								<a href="http://ujszulottmentokszeged.com/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/ujszulott.png" class="img-responsive" alt="" style="height: 100px;">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://szakkepzesszeged.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/szegedi-szakkepzes.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://sctt.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/sctt.png" class="img-responsive" alt="">
-								</a>
-							</div>	
-							<div class="partner-link-wrapper">
-								<a href="http://sportkoalicio.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/sport.png" class="img-responsive" alt="">
-								</a>
-							</div>	
-							<div class="partner-link-wrapper">
-								<a href="http://www.szegedsport.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/furdo.png" class="img-responsive" alt="" style="height: 93px;">
-								</a>
-							</div>
-							<div class="partner-link-wrapper">
-								<a href="http://rendezvenyhaz.morahalom.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/aranyszom.png" class="img-responsive" alt="" style="height: 93px;">
-								</a>
-							</div>		
-							<div class="partner-link-wrapper">
-								<a href="http://www.parakletos.hu/" class="partner-link" target="_blank" data-toggle="modal">
-									<img src="img/sponsors/2017/parakletoslogo.png" class="img-responsive" alt="" style="height: 93px;">
-								</a>
-							</div>						
-            </div>
-            <div class="col-sm-2 portfolio-item">
-            </div>
-				</div>
-        <div class="row">
-            <div class="page-scroll text-center link-to-top">
-                <a href="#page-top">vissza az oldal tetejére</a>
-            </div>
-        </div>
-    </div>
-</section>
-
 <div class="page-scroll">
     <a href="#contact">
         <img class="arrow-down" src="img/feher_nyil2.png" alt="">
@@ -620,10 +435,10 @@ getCounter("main");
         <div class="row">
 
             <div class="col-sm-6 text-center">
-                <img src="img/logo-fekete.png" class="img-responsive" alt="">
+                <img src="img/logo-lila.png" class="img-responsive" alt="">
                 <div class="col-sm-12 text-left" id="contact-text">
                     <p>Cím: 6724 Szeged, Hétvezér utca 5.</p>
-                    <p>E-mail: tagasterfesztival@gmail.com</p>
+                    <p>E-mail: info@tagaster.hu</p>
                 </div>
 	
             </div>
@@ -664,7 +479,7 @@ getCounter("main");
         <div class="row" id="labjegyzet">
             <div class="col-sm-12 text-center">
                 <hr>
-                <p>© Tágas Tér Fesztivál 2017</p>
+                <p>© Tágas Tér Fesztivál 2018</p>
             </div>
         </div>
         <div class="row">

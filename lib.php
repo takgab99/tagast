@@ -38,7 +38,7 @@ function getNavBar($main = "") {
                 <a class="navbar-brand" href="<?php print $mainPageLink; ?>">
                     <img src="img/logo.png" style="float: left;">
                     <div id="navbar-title">Tágas Tér Fesztivál</div>
-                    <div id="navbar-date">SZEGED, 2017.09.08-10.</div>
+                    <div id="navbar-date">SZEGED, 2018.09.15-16.</div>
                 </a>
             </div>
 
@@ -93,8 +93,8 @@ function getHead($title = "") {
     <meta name="author" content="">
 
     <?php
-        if ($title) $title = $title . " - Tágas Tér Fesztivál - 2017.";
-        else $title = "Tágas Tér Fesztivál - 2017.";
+        if ($title) $title = $title . " - Tágas Tér Fesztivál";
+        else $title = "Tágas Tér Fesztivál";
     ?>
     <title><?php print $title; ?></title>
 
@@ -165,7 +165,7 @@ function getContactSection() {
                     <img src="img/logo-lila.png" class="img-responsive" alt="">
                     <div class="col-sm-12 text-left" id="contact-text">
                         <p>Cím: 6724 Szeged, Hétvezér utca 5.</p>
-                        <p>E-mail: tagasterfesztival@gmail.com</p>
+                        <p>E-mail: info@tagaster.hu</p>
                     </div>
 
                 </div>
@@ -206,7 +206,7 @@ function getContactSection() {
             <div class="row" id="labjegyzet">
                 <div class="col-sm-12 text-center">
                     <hr>
-                    <p>© Tágas Tér Fesztivál 2017</p>
+                    <p>© Tágas Tér Fesztivál</p>
                 </div>
             </div>
             <div class="row">

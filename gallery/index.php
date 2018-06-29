@@ -263,7 +263,7 @@ Fesztiválunk Szegeden a Vértónál, a Dugonics téren és néhány belvárosi 
                 </div>
             </div -->
             <div class="col-sm-12 portfolio-item text-center question">
-                <p>Kérdésed van? Írj nekünk: <a href="mailto:tagasterfesztival@gmail.com">tagasterfesztival@gmail.com</a></p>
+                <p>Kérdésed van? Írj nekünk: <a href="mailto:info@tagaster.hu">info@tagaster.hu</a></p>
             </div>
         </div>
 

@@ -264,6 +264,28 @@ section h2 {
 }
 
 
+/* Registration section and page ---> */
+#registration {
+    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2018/05/15114256/Artboard-1.jpg');
+    background-attachment: fixed;
+    color: white;
+}
+#registration .ticket-id-lg {
+    padding: .5rem 1rem;
+    font-size: 3.25rem;
+    line-height: 1;
+    border-radius: .3rem;
+    height: 56px;
+    text-align: center;
+}
+
+.registration-page #register-form label {
+    margin-top: 10px;
+}
+
+/* <-- Registration page */
+
+
 /* news summary */
 .news-summary h2 {
     margin-bottom: 22px;
@@ -418,7 +440,9 @@ section h2 {
 	/* Standard syntax */
     /*background: radial-gradient(circle, #ed008e, #bf0072);*/
     /*background: ;*/
-	color: black;
+	color: white;
+    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2018/05/15114256/Artboard-1.jpg');
+    background-attachment: fixed;
 }
 #contact .contact-title {
 	font-size: 28px;
