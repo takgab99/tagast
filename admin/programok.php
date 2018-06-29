@@ -93,9 +93,8 @@ getNavbar();
     $allowableValues = array("Allowable Value1", "Allowable Value2", "Dropdown Value", "CRUD");
     $tblDemo->defineAllowableValues("fldCertainFields", $allowableValues);
     $days = array(
-        array("1","Péntek"),
-        array("2","Szombat"),
-        array("3", "Vasárnap")
+        array("1","Szombat"),
+        array("2", "Vasárnap")
     );
     $tblDemo->defineAllowableValues("day", $days);
 
@@ -170,10 +169,10 @@ getNavbar();
 //        return "péntek";
         switch ($val) {
             case 1:
-                return "Péntek";
+                return "Szombat";
                 break;
             case 2:
-                return "Szombat";
+                return "Vasárnap";
             break;
             case 3:
                 return "Vasárnap";
