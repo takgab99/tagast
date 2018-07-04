@@ -15,21 +15,23 @@ while ($registration = mysqli_fetch_array($ticket_query, MYSQLI_ASSOC)) {
   $update_id = $registration['id'];
   $update_count = $registration['update_count'] + 1;
 }
-
 $message = '';
+
+$now = date("Y-m-d H:i:s");
 if ($update_count > 0) {
   $query = $mysqli->query("UPDATE `registration2018` 
                           SET `ticket_id` = '" . $ticket_id . "', `name` =  '" . $name . "', `city` = '" . $city . "',
                           `community` = '" . $community . "', `first_seminar` = '" . $first_seminar . "',
-                          `second_seminar` = '" . $second_seminar . "', `update_count` = '" . $update_count . "'
+                          `second_seminar` = '" . $second_seminar . "', `update_count` = '" . $update_count . "',
+                          `updated_at` = '" . $now . "'
                           WHERE id = '" . $update_id . "'");
-//  $message = "Errormessage: " . $mysqli->error;
+//  $message .= "Errormessage: " . $mysqli->error;
   $message .= 'A regisztrációdat modosítottuk!';
 }
 else {
-  $query = $mysqli->query("INSERT INTO `registration2018` (`ticket_id`, `name`, `city`, `community`, `first_seminar`, `second_seminar`, `update_count`) 
+  $query = $mysqli->query("INSERT INTO `registration2018` (`ticket_id`, `name`, `city`, `community`, `first_seminar`, `second_seminar`, `update_count`, `updated_at`, `created_at`) 
                         VALUES('" . $ticket_id . "', '" . $name . "', '" . $city . "', '" . $community . "', 
-                        '" . $first_seminar . "', '" . $second_seminar . "', '" . $update_count ."')");
+                        '" . $first_seminar . "', '" . $second_seminar . "', '" . $update_count ."', '" . $now . "', '" . $now . "')");
 //  $message = "Errormessage: " . $mysqli->error;
   $message .= 'A regisztrációdat elmentettük!';
 }

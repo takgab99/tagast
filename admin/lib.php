@@ -86,6 +86,9 @@ function getNavbar() {
                         <a href="programok.php">Programok</a>
                     </li>
                     <li class="">
+                        <a href="regisztralok.php">Regisztrálók</a>
+                    </li>
+                    <li class="">
                         <a href="hirek.php">Hírek</a>
                     </li>
                     <li class="">
