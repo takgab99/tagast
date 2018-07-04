@@ -309,77 +309,9 @@ getCounter("main");
 </section -->
 <!-- Contact Section -->
 
-<section id="contact">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-sm-6 text-center logo-container">
-                <img src="img/logo-feher-kicsi.png" class="img-responsive" alt="">
-                <div id="navbar-title">Tágas Tér</div>
-                <div id="navbar-date">SZEGED, 2018.09.15-16.</div>
-                <div class="col-sm-12 text-left" id="contact-text">
-                    <p>Cím: 6724 Szeged, Hétvezér utca 5.</p>
-                    <p>E-mail: info@tagaster.hu</p>
-
-                    <a href="https://www.instagram.com/tagas_ter/" target="_blank" style="padding-bottom: 0px; float: left; margin-right: 10px;">
-                        <img src="img/instagram-ikon.png" class="img-responsive" style="width: 25px">
-                    </a>
-                    <a href="https://www.facebook.com/tagaster" target="_blank" style="padding-bottom: 0px;">
-                        <img src="img/facebook_ikon.png" class="img-responsive" style="width: 25px;">
-                    </a>
-                </div>
-	
-            </div>
-            <div class="col-sm-6 text-center">
-                <h2 class="text-left">Írj nekünk!</h2>
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <input type="text" class="form-control" placeholder="Név" id="name" required data-validation-required-message="Kérem, adja meg a nevét.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <input type="email" class="form-control" placeholder="E-mail cím" id="email" required data-validation-required-message="Kérem, adja meg az e-mail címét.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <textarea rows="5" class="form-control" placeholder="Üzenet" id="message" required data-validation-required-message="Kérem, írja le az üzenetet."></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <br>
-                    <div id="success"></div>
-                    <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-success">küld ></button>
-                        </div>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-        <div class="row" id="labjegyzet">
-            <div class="col-sm-12 text-center">
-                <hr>
-                <p>© Tágas Tér Konferencia 2018</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="page-scroll text-center link-to-top">
-                <a href="#page-top">vissza az oldal tetejére</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
+<?php
+print getContactSection();
+?>
 
 <!-- Portfolio Modals -->
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">

@@ -164,12 +164,20 @@ function getContactSection() {
         <div class="container">
             <div class="row">
 
-                <div class="col-sm-6 text-center">
-                    <img src="img/logo-lila.png" class="img-responsive" alt="">
+                <div class="col-sm-6 text-center logo-container">
+                    <img src="img/logo-feher-kicsi.png" class="img-responsive" alt="">
+                    <div id="navbar-title">Tágas Tér</div>
+                    <div id="navbar-date">SZEGED, 2018.09.15-16.</div>
                     <div class="col-sm-12 text-left" id="contact-text">
                         <p>Cím: 6724 Szeged, Hétvezér utca 5.</p>
                         <p>E-mail: info@tagaster.hu</p>
 
+                        <a href="https://www.instagram.com/tagas_ter/" target="_blank" style="padding-bottom: 0px; float: left; margin-right: 10px;">
+                            <img src="img/instagram-ikon.png" class="img-responsive" style="width: 25px">
+                        </a>
+                        <a href="https://www.facebook.com/tagaster" target="_blank" style="padding-bottom: 0px;">
+                            <img src="img/facebook_ikon.png" class="img-responsive" style="width: 25px;">
+                        </a>
                     </div>
 
                 </div>
@@ -210,7 +218,7 @@ function getContactSection() {
             <div class="row" id="labjegyzet">
                 <div class="col-sm-12 text-center">
                     <hr>
-                    <p>© Tágas Tér Fesztivál</p>
+                    <p>© Tágas Tér Konferencia 2018</p>
                 </div>
             </div>
             <div class="row">
