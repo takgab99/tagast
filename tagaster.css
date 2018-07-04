@@ -26,9 +26,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: black;
     color: white;
 }
-.contact-icon {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+.invert {
+    filter: invert(100%);
 }
 
 
@@ -49,7 +48,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: black;
 }
 .navbar-inverse.dark-header .navbar-nav > li > a {
-    color: black;
 }
 .navbar-fixed-top.dark-header .navbar-brand img {
     -webkit-filter: invert(100%);
@@ -289,21 +287,22 @@ section h2 {
   width: auto;
 }
 .intro-image-container {
-    background: url('img/hatter-2018-1.png');
-    background-size: cover;
     height: 712px;
     margin-top: -20px;
+    text-transform: uppercase;
+}
+.intro-image-container img {
+    position: relative;
+    top: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.intro-image-container h1 {
-    font-size: 40px;
-    position: relative;
-    top: 50%;
-}
 .intro-image-container .subtitle {
     font-size: 18px;
     position: relative;
-    top: 50%;
+    top: 43%;
+    font-weight: bold;
 }
 @media (min-width: 768px) {
     .intro-image-container h1 {
@@ -311,7 +310,7 @@ section h2 {
         margin-top: -11px;
     }
     .intro-image-container .subtitle {
-        font-size: 32px;
+        font-size: 40px;
     }
 }
 @media (min-width: 992px) {
@@ -583,7 +582,8 @@ section h2 {
 header {
     text-align: center;
     color: #fff;
-    background: white;
+    background: url('img/hatter-2018-1.png');
+    background-size: cover;
 }
 header .container {
     padding-top: 0px;

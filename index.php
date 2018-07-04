@@ -72,9 +72,9 @@ getCounter("main");
     <div class="container">
         <div class="row">
             <div class="col-lg-12 intro-image-container text-center">
-                <h1>Tágas Tér Konferencia</h1>
+                <img src="img/logo-keretes-feher-kicsi.png">
                 <div class="subtitle">Szeptember 15-16.</div>
-                <div class="subtitle">Ifjúsági Ház, Szeged</div>
+                <div class="subtitle">IH Rendezvényközpont, Szeged</div>
             </div>
         </div>
     </div>
@@ -257,9 +257,9 @@ getCounter("main");
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <div class="btn-group">
                     <a href="programok.php">
-                        <button class="btn btn-default programs-button" type="button" aria-expanded="false">
+                        <!--<button class="btn btn-default programs-button" type="button" aria-expanded="false">
                             Részletes programtáblázat >
-                        </button>
+                        </button>-->
                     </a>
                 </div>
             </div>

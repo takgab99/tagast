@@ -35,7 +35,7 @@ function getNavBar($main = "") {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php print $mainPageLink; ?>">
+                <a class="navbar-brand hide" href="<?php print $mainPageLink; ?>">
                     <img src="img/logo-feher-kicsi.png" style="float: left;">
                     <div id="navbar-title">Tágas Tér</div>
                     <div id="navbar-date">SZEGED, 2018.09.15-16.</div>
@@ -43,13 +43,13 @@ function getNavBar($main = "") {
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse navbar-social" id="bs-example-navbar-collapse-1">
                 <div style="margin-top: -10px; float:right">
                     <a href="https://www.instagram.com/tagas_ter/" target="_blank" style="padding-bottom: 0px; float: left; margin-right: 10px;">
-                        <img src="img/instagram-ikon.png" class="img-responsive contact-icon" style="width: 25px">
+                        <img src="img/instagram-logo-feher-kicsi.png" class="img-responsive contact-icon" style="width: 25px">
                     </a>
                     <a href="https://www.facebook.com/tagaster" target="_blank" style="padding-bottom: 0px; float: right;">
-                        <img src="img/facebook_ikon.png" class="img-responsive contact-icon" style="width: 25px;">
+                        <img src="img/facebook-logo-feher-kicsi.png" class="img-responsive contact-icon" style="width: 25px;">
                     </a>
                 </div><br>
                 <ul class="nav navbar-nav navbar-right">
@@ -173,10 +173,10 @@ function getContactSection() {
                         <p>E-mail: info@tagaster.hu</p>
 
                         <a href="https://www.instagram.com/tagas_ter/" target="_blank" style="padding-bottom: 0px; float: left; margin-right: 10px;">
-                            <img src="img/instagram-ikon.png" class="img-responsive contact-icon" style="width: 25px">
+                            <img src="img/instagram-logo-feher-kicsi.png" class="img-responsive contact-icon" style="width: 65px">
                         </a>
                         <a href="https://www.facebook.com/tagaster" target="_blank" style="padding-bottom: 0px;">
-                            <img src="img/facebook_ikon.png" class="img-responsive contact-icon" style="width: 25px;">
+                            <img src="img/facebook-logo-feher-kicsi.png" class="img-responsive contact-icon" style="width: 65px;">
                         </a>
                     </div>
 

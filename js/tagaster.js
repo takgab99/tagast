@@ -17,9 +17,13 @@ $(window).scroll(function() {
     if (scroll >= 500) {
         //clearHeader, not clearheader - caps H
         $(".navbar-inverse").addClass("dark-header");
+        $(".navbar-inverse a.navbar-brand").removeClass("hide");
+        $(".navbar-inverse .navbar-social a").addClass("invert");
     }
     else {
         $(".navbar-inverse").removeClass("dark-header");
+        $(".navbar-inverse a.navbar-brand").addClass("hide");
+        $(".navbar-inverse .navbar-social a").removeClass("invert");
 
     }
 });
