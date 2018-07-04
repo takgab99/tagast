@@ -1,5 +1,5 @@
 $(function () {
-
+console.log('dddddddddddddddddddddddddd');
   $("#register-form input, #register-form textarea").jqBootstrapValidation({
     preventSubmit: true,
     submitError: function ($form, event, errors) {
@@ -48,17 +48,32 @@ $(function () {
           },
           cache: false,
           success: function (data) {
-            // Success message
-            $('#register-success').html("<div class='alert alert-success'>");
-            $('#register-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-              .append("</button>");
-            $('#register-success > .alert-success')
-              .append("<strong>" + data + "</strong>");
-            $('#register-success > .alert-success')
-              .append('</div>');
+            var error = data.split("-")[0];
+            var message = data.split("-")[1];
+            if (error == 0) {
+                console.log('sss');
+                // Success message
+                $('#register-success').html("<div class='alert alert-success'>");
+                $('#register-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    .append("</button>");
+                $('#register-success > .alert-success')
+                    .append("<strong>" + message + "</strong>");
+                $('#register-success > .alert-success')
+                    .append('</div>');
 
-            //clear all fields
-            $('#register-form').trigger("reset");
+                //clear all fields
+                $('#register-form').trigger("reset");
+            }
+            else {
+                console.log('dfdfdf');
+                $('#register-success').html("<div class='alert alert-danger'>");
+                $('#register-success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    .append("</button>");
+                $('#register-success > .alert-danger')
+                    .append("<strong>" + message + "</strong>");
+                $('#register-success > .alert-danger')
+                    .append('</div>');
+            }
           },
           error: function () {
             // Fail message
@@ -83,7 +98,6 @@ $(function () {
     $(this).tab("show");
   });
 });
-
 
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function () {

@@ -25,7 +25,7 @@ function getNavBar($main = "") {
     }
     ?>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top dark-header">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -35,7 +35,7 @@ function getNavBar($main = "") {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand hide" href="<?php print $mainPageLink; ?>">
+                <a class="navbar-brand" href="<?php print $mainPageLink; ?>">
                     <img src="img/logo-feher-kicsi.png" style="float: left;">
                     <div id="navbar-title">Tágas Tér</div>
                     <div id="navbar-date">SZEGED, 2018.09.15-16.</div>
@@ -54,25 +54,25 @@ function getNavBar($main = "") {
                 </div><br>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
-                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#page-top">Főoldal</a>
+                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#page-top" class="invert">Főoldal</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#registration">Regisztráció</a>
+                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#registration" class="invert">Regisztráció</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#news">Hírek</a>
+                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#news" class="invert">Hírek</a>
                     </li>
                     <li class="page-scroll" id="menu-about">
-                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#about">Rólunk</a>
+                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#about" class="invert">Rólunk</a>
                     </li>
                     <li class="page-scroll" id="menu-programs">
-                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#programs">Programok</a>
+                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#programs" class="invert">Programok</a>
                     </li>
                     <!-- li class="page-scroll" id="menu-gallery">
                         <a href="<?php SITE_URL ?><?php print $mainPath; ?>#gallery">Galéria</a>
                     </li -->
                     <li class="page-scroll" id="menu-contact">
-                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#contact">Kapcsolat</a>
+                        <a href="<?php SITE_URL ?><?php print $mainPath; ?>#contact" class="invert">Kapcsolat</a>
                     </li>
                 </ul>
             </div>

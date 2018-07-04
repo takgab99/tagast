@@ -8,32 +8,42 @@ $city = isset($_POST['city']) ? $_POST['city'] : '';
 $community = isset($_POST['community']) ? $_POST['community'] : '';
 $first_seminar = isset($_POST['first_seminar']) ? $_POST['first_seminar'] : '';
 $second_seminar = isset($_POST['second_seminar']) ? $_POST['second_seminar'] : '';
+$second_seminar = isset($_POST['second_seminar']) ? $_POST['second_seminar'] : '';
+$second_seminar = isset($_POST['second_seminar']) ? $_POST['second_seminar'] : '';
 
-$update_count = 0;
-$ticket_query = $mysqli->query("SELECT id, update_count FROM registration2018 WHERE ticket_id = '" . $ticket_id . "'");
-while ($registration = mysqli_fetch_array($ticket_query, MYSQLI_ASSOC)) {
-  $update_id = $registration['id'];
-  $update_count = $registration['update_count'] + 1;
+$error = 0;
+$available_ticket_query = $mysqli->query("SELECT id FROM tickets WHERE ticket_id = '" . $ticket_id . "'");
+if(mysqli_num_rows($available_ticket_query) == 0){
+  $error = 1;
+  $message = 'Ilyen jegykód nem szerepel az adatbázisban!';
 }
-$message = '';
 
-$now = date("Y-m-d H:i:s");
-if ($update_count > 0) {
-  $query = $mysqli->query("UPDATE `registration2018` 
-                          SET `ticket_id` = '" . $ticket_id . "', `name` =  '" . $name . "', `city` = '" . $city . "',
-                          `community` = '" . $community . "', `first_seminar` = '" . $first_seminar . "',
-                          `second_seminar` = '" . $second_seminar . "', `update_count` = '" . $update_count . "',
-                          `updated_at` = '" . $now . "'
-                          WHERE id = '" . $update_id . "'");
-//  $message .= "Errormessage: " . $mysqli->error;
-  $message .= 'A regisztrációdat modosítottuk!';
+if (!$error) {
+  $update_count = 0;
+  $ticket_query = $mysqli->query("SELECT id, update_count FROM registration2018 WHERE ticket_id = '" . $ticket_id . "'");
+  while ($registration = mysqli_fetch_array($ticket_query, MYSQLI_ASSOC)) {
+    $update_id = $registration['id'];
+    $update_count = $registration['update_count'] + 1;
+  }
+  $message = '';
+
+  $now = date("Y-m-d H:i:s");
+  if ($update_count > 0) {
+    $query = $mysqli->query("UPDATE `registration2018` 
+                            SET `ticket_id` = '" . $ticket_id . "', `name` =  '" . $name . "', `city` = '" . $city . "',
+                            `community` = '" . $community . "', `first_seminar` = '" . $first_seminar . "',
+                            `second_seminar` = '" . $second_seminar . "', `update_count` = '" . $update_count . "',
+                            `updated_at` = '" . $now . "'
+                            WHERE id = '" . $update_id . "'");
+    //  $message .= "Errormessage: " . $mysqli->error;
+    $message .= 'A regisztrációdat modosítottuk!';
+  } else {
+    $query = $mysqli->query("INSERT INTO `registration2018` (`ticket_id`, `name`, `city`, `community`, `first_seminar`, `second_seminar`, `update_count`, `updated_at`, `created_at`) 
+                          VALUES('" . $ticket_id . "', '" . $name . "', '" . $city . "', '" . $community . "', 
+                          '" . $first_seminar . "', '" . $second_seminar . "', '" . $update_count . "', '" . $now . "', '" . $now . "')");
+    //  $message = "Errormessage: " . $mysqli->error;
+    $message .= 'A regisztrációdat elmentettük!';
+  }
 }
-else {
-  $query = $mysqli->query("INSERT INTO `registration2018` (`ticket_id`, `name`, `city`, `community`, `first_seminar`, `second_seminar`, `update_count`, `updated_at`, `created_at`) 
-                        VALUES('" . $ticket_id . "', '" . $name . "', '" . $city . "', '" . $community . "', 
-                        '" . $first_seminar . "', '" . $second_seminar . "', '" . $update_count ."', '" . $now . "', '" . $now . "')");
-//  $message = "Errormessage: " . $mysqli->error;
-  $message .= 'A regisztrációdat elmentettük!';
-}
-print $message;
+print $error . "-" . $message;
 ?>

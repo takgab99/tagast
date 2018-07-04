@@ -1,6 +1,12 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
+    $(".index-body .navbar-inverse").removeClass("dark-header");
+    $(".index-body .navbar-inverse a.navbar-brand").addClass("hide");
+    $(".index-body .navbar-inverse .navbar-social a").removeClass("invert");
+    $(".register-body .navbar-inverse .navbar-social a").addClass("invert");
+
+
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -13,17 +19,17 @@ $(function() {
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    //>=, not <=
     if (scroll >= 500) {
+        console.log("ffdf");
         //clearHeader, not clearheader - caps H
-        $(".navbar-inverse").addClass("dark-header");
-        $(".navbar-inverse a.navbar-brand").removeClass("hide");
-        $(".navbar-inverse .navbar-social a").addClass("invert");
+        $(".index-body .navbar-inverse").addClass("dark-header");
+        $(".index-body .navbar-inverse a.navbar-brand").removeClass("hide");
+        $(".index-body .navbar-inverse .navbar-social a").addClass("invert");
     }
     else {
-        $(".navbar-inverse").removeClass("dark-header");
-        $(".navbar-inverse a.navbar-brand").addClass("hide");
-        $(".navbar-inverse .navbar-social a").removeClass("invert");
+        $(".index-body .navbar-inverse").removeClass("dark-header");
+        $(".index-body .navbar-inverse a.navbar-brand").addClass("hide");
+        $(".index-body .navbar-inverse .navbar-social a").removeClass("invert");
 
     }
 });

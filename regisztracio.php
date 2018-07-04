@@ -21,7 +21,7 @@ include("lib.php");
 	}
 </style>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index register-body">
 
 <?php
 // Load navbar
