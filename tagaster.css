@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: black;
     color: white;
 }
+.contact-icon {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 
 
 
@@ -35,13 +39,34 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background: #1eadbb;
 }
 .navbar-inverse {
+    background-color: transparent;
+}
+
+.navbar-inverse.dark-header {
     background-color: white;
 }
-.navbar-inverse .navbar-brand {
+.navbar-inverse.dark-header .navbar-brand {
     color: black;
+}
+.navbar-inverse.dark-header .navbar-nav > li > a {
+    color: black;
+}
+.navbar-fixed-top.dark-header .navbar-brand img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
     padding: 0px;
     width: 190px;
     font-size: 14px;
+    margin-left: 0px;
+}
+@media (min-width: 768px) {
+    .navbar>.container .navbar-brand {
+        margin-left: 0px;
+    }
 }
 .navbar-inverse .navbar-brand img {
     margin-right: 10px;
@@ -49,6 +74,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .navbar-inverse .navbar-brand #navbar-title {
     margin-top: 6px;
+    text-transform: uppercase;
 }
 .navbar-inverse .navbar-brand #navbar-date{
     font-size: 12px;
@@ -68,7 +94,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-        box-shadow: 0 0 23px 3px gray;
         padding-bottom: 7px;
     }
     .navbar-fixed-top .navbar-brand {
@@ -76,7 +101,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-        width: 343px;
+        width: 225px;
         margin-top: -14px;
     }
     .navbar-fixed-top.navbar-shrink {
@@ -89,14 +114,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     .navbar-inverse .navbar-brand #navbar-date{
         font-size: 16px;
     }
+    .navbar-inverse .navbar-nav {
+        text-transform: uppercase;
+        font-family: 'Gotham SSm A','Gotham SSm B',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
     .navbar-inverse .navbar-nav > li > a {
         padding-left: 8px;
         padding-right: 8px;
         letter-spacing: 0px;
+        color: white;
     }
 
     .navbar-fixed-top .navbar-brand #navbar-date {
-        font-size: 0.6em;
+        font-size: 0.5em;
         line-height: 1.9em;
     }
     .navbar-fixed-top.navbar-shrink .navbar-brand #navbar-date {
@@ -159,7 +189,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .navbar-inverse .navbar-header a:hover,
 .navbar-inverse .navbar-header a:focus,
 .navbar-inverse .navbar-header a:active {
-    color: black;
+    color: gray;
 }
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -262,6 +292,7 @@ section h2 {
     background: url('img/hatter-2018-1.png');
     background-size: cover;
     height: 712px;
+    margin-top: -20px;
 }
 
 .intro-image-container h1 {
@@ -555,7 +586,7 @@ header {
     background: white;
 }
 header .container {
-    padding-top: 52px;
+    padding-top: 0px;
 }
 header img {
     display: block;
@@ -590,7 +621,7 @@ header .text-fix .bible-verse-location {
 }
 @media(min-width:768px) {
     header .container {
-	    padding-top: 80px;
+	    padding-top: 0px;
     }
 
     header .intro-text .name {
