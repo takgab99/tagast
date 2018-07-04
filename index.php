@@ -126,90 +126,6 @@ getCounter("main");
   </div>
 </section> -->
 
-<!-- News Grid Section -->
-<section id="news">
-    <div class="container">
-        <div class="row">
-<!--            <div class="col-sm-3 text-center">-->
-<!--						</div>-->
-            <div class="col-sm-6 text-center">
-                <h2>— Videók —</h2>
-                <div class="row">
-                    <div class="col-sm-12 portfolio-item text-center">
-                        <?php
-                        /* $videosQuery = $mysqli->query("SELECT video FROM videos ORDER BY date DESC LIMIT 0,1");
-                        $video = mysql_fetch_assoc($videosQuery); */
-                        ?>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" width="420" height="236" src="<?php /* print str_replace("youtube.com/watch?v=", "youtube.com/embed/", $video["video"]); */?>https://youtube.com/embed/JkbawGfR2nY" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <!-- div class="btn-group">
-                            <a href="videok.php">
-                                <button class="btn btn-default btn-dark" type="button" aria-expanded="false">
-                                    További videók >
-                                </button>
-                            </a>
-                        </div -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 text-center news-summary">
-                <h2>— Hírek —</h2>
-                    <?php
-                    $newsQuery = $mysqli->query("SELECT * FROM news ORDER BY date DESC LIMIT 0,3");
-                    while ($news = mysqli_fetch_array($newsQuery, MYSQLI_ASSOC)) {
-                        ?>
-                        <div class="row text-left">
-                            <h3><?php print $news['title']; ?></h3>
-                            <div class="news-date"><?php print date('Y.m.d.', strtotime($news['date'])); ?></div>
-                            <div class="news-short-body"><?php print (trim_text($news['body'], 380, $ellipses = true, $strip_html = false)); ?>
-                                <a href="hir.php?id=<?php print $news['id']; ?>"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
-                            </div>
-
-                        </div>
-
-                    <?php
-                    }
-                    ?>
-                <div class="btn-group">
-                    <a href="hirek.php">
-                        <button class="btn btn-default btn-dark" type="button" aria-expanded="false">
-                            Több hír >
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3 text-center">
-						</div>
-        </div>
-<!--        <div class="row">-->
-<!--            <div class="col-sm-2 portfolio-item text-center">-->
-<!--            </div>-->
-<!--            <div class="col-sm-8 portfolio-item text-center">-->
-<!--                <p><b>2015. szeptember 25-én</b> felbolydul az Újszegedi Liget és környéke. Kezdetét veszi a Tágas Tér Fesztivál három napos rendezvénye, amely új színbe öltözteti szeptember utolsó hétvégéjét. Egy találkozásra hívunk mindenkit, ahol kinyílik a tér és láthatóvá válik egy élhető, egy szerethető Szeged. Koncertek, előadások, kiállítások, bemutatók, sok-sok játék és sport: ez a Tágas Tér Fesztivál. E téren bárki elfér, akárki megtalálja a helyét és mindenki talál magának olyan programot, ahol jól érzi magát. Csatlakozzon a sok-sok ezer szegedihez és találkozzunk a Tágas Téren!</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-8 col-lg-offset-2 text-center">-->
-<!--                <div class="btn-group">-->
-<!--                    <a href="rolunk.php">-->
-<!--                        <button class="btn btn-default" type="button" aria-expanded="false">-->
-<!--                            Részletek >-->
-<!--                        </button>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-        <div class="row">
-            <div class="page-scroll text-center link-to-top">
-                <a href="#page-top">vissza az oldal tetejére</a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
 <!-- About Grid Section -->
 <section id="about">
     <div class="container">
@@ -332,7 +248,7 @@ getCounter("main");
                 <span>13:00 | Szeminárium<br>
                     <i>K.Ö.D.</i> • <i>Ferenczy Csaba és Valkai Ildikó</i> • <i>SzabadOn</i><br></span>
 
-                <span>19:00 | Esti dicsőítés<br>
+                <span>17:00 | Esti dicsőítés<br>
                     <i>Sipos Márk</i> • <i>Csiszér László és zenekara</i></span>
 
             </div>
@@ -397,11 +313,20 @@ getCounter("main");
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-6 text-center">
-                <img src="img/logo-lila.png" class="img-responsive" alt="">
+            <div class="col-sm-6 text-center logo-container">
+                <img src="img/logo-feher-kicsi.png" class="img-responsive" alt="">
+                <div id="navbar-title">Tágas Tér</div>
+                <div id="navbar-date">SZEGED, 2018.09.15-16.</div>
                 <div class="col-sm-12 text-left" id="contact-text">
                     <p>Cím: 6724 Szeged, Hétvezér utca 5.</p>
                     <p>E-mail: info@tagaster.hu</p>
+
+                    <a href="https://www.instagram.com/tagas_ter/" target="_blank" style="padding-bottom: 0px; float: left; margin-right: 10px;">
+                        <img src="img/instagram-ikon.png" class="img-responsive" style="width: 25px">
+                    </a>
+                    <a href="https://www.facebook.com/tagaster" target="_blank" style="padding-bottom: 0px;">
+                        <img src="img/facebook_ikon.png" class="img-responsive" style="width: 25px;">
+                    </a>
                 </div>
 	
             </div>
