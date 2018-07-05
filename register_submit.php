@@ -12,11 +12,11 @@ $second_seminar = isset($_POST['second_seminar']) ? $_POST['second_seminar'] : '
 $second_seminar = isset($_POST['second_seminar']) ? $_POST['second_seminar'] : '';
 
 $error = 0;
-$available_ticket_query = $mysqli->query("SELECT id FROM tickets WHERE ticket_id = '" . $ticket_id . "'");
-if(mysqli_num_rows($available_ticket_query) == 0){
-  $error = 1;
-  $message = 'Ilyen jegykód nem szerepel az adatbázisban!';
-}
+//$available_ticket_query = $mysqli->query("SELECT id FROM tickets WHERE ticket_id = '" . $ticket_id . "'");
+//if(mysqli_num_rows($available_ticket_query) == 0){
+//  $error = 1;
+//  $message = 'Ilyen jegykód nem szerepel az adatbázisban!';
+//}
 
 if (!$error) {
   $update_count = 0;
@@ -38,9 +38,10 @@ if (!$error) {
     //  $message .= "Errormessage: " . $mysqli->error;
     $message .= 'A regisztrációdat modosítottuk!';
   } else {
-    $query = $mysqli->query("INSERT INTO `registration2018` (`ticket_id`, `name`, `city`, `community`, `first_seminar`, `second_seminar`, `update_count`, `updated_at`, `created_at`) 
-                          VALUES('" . $ticket_id . "', '" . $name . "', '" . $city . "', '" . $community . "', 
-                          '" . $first_seminar . "', '" . $second_seminar . "', '" . $update_count . "', '" . $now . "', '" . $now . "')");
+    $query = $mysqli->prepare("INSERT INTO `registration2018` (`ticket_id`, `name`, `city`, `community`, `first_seminar`, `second_seminar`, `update_count`, `updated_at`, `created_at`) 
+                          VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $query->bind_param('ssssssiss', $ticket_id, $name, $city, $community, $first_seminar, $second_seminar, $update_count, $now, $now);
+    $query->execute();
     //  $message = "Errormessage: " . $mysqli->error;
     $message .= 'A regisztrációdat elmentettük!';
   }
