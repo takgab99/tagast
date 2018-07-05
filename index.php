@@ -283,30 +283,7 @@ getCounter("main");
         <img class="arrow-down" src="img/feher_nyil2.png" alt="">
     </a>
 </div>
-<!-- Gallery Section -->
-<!-- section id="gallery">
-    <h1>Galéria</h1>
-    <div class="row gallery">
-        <?php
-        $categories = $mysqli->query("SELECT * FROM `gallery_category` ORDER BY weight ASC");
-        while ($category = mysqli_fetch_array($categories, MYSQLI_ASSOC)) {
-            $image = $mysqli->query("SELECT * FROM tagaster_data.gallery_images WHERE category_id = ".$category['id']." ORDER BY weight ASC LIMIT 0, 1");
-            $katpic = mysqli_fetch_assoc($image);
-            if($katpic['name'] != null) {
-                ?>
-                <div class="category" data-category="<?php print $category['id']; ?>">
-                    <div class="img" style="background-image:url(gallery/thumbnail/<?php print $katpic['name']?>);"></div>
-                    <h3><?php print $category['name']; ?></h3>
-                </div>
 
-                <?php
-            }
-            ?>
-        <?php
-        }
-        ?>
-    </div>
-</section -->
 <!-- Contact Section -->
 
 <?php

@@ -1,6 +1,0 @@
-[27-Mar-2018 07:25:41 Europe/Budapest] PHP Warning:  include_once(connect.php): failed to open stream: No such file or directory in /home/tagaster/public_html/gallery/index.php on line 2
-[27-Mar-2018 07:25:41 Europe/Budapest] PHP Warning:  include_once(): Failed opening 'connect.php' for inclusion (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/tagaster/public_html/gallery/index.php on line 2
-[27-Mar-2018 07:25:41 Europe/Budapest] PHP Warning:  include(lib.php): failed to open stream: No such file or directory in /home/tagaster/public_html/gallery/index.php on line 3
-[27-Mar-2018 07:25:41 Europe/Budapest] PHP Warning:  include(lib.php): failed to open stream: No such file or directory in /home/tagaster/public_html/gallery/index.php on line 3
-[27-Mar-2018 07:25:41 Europe/Budapest] PHP Warning:  include(): Failed opening 'lib.php' for inclusion (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/tagaster/public_html/gallery/index.php on line 3
-[27-Mar-2018 07:25:41 Europe/Budapest] PHP Fatal error:  Call to undefined function getNavBar() in /home/tagaster/public_html/gallery/index.php on line 66
