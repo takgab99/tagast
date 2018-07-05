@@ -90,7 +90,10 @@ getCounter("main");
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <p><b>Szeptember 15</b>-én a belépés jegyvásárláshoz és regisztrációhoz kötött. Jegyedet megvásárolhatod a <a href="http://jegy.hu" target="_blank">www.jegy.hu</a> oldalon.</p>
+                <p><b>Szeptember 15</b>-én a belépés jegyvásárláshoz és regisztrációhoz kötött.<br>
+                    Jegyedet megvásárolhatod <a href="https://www.jegy.hu/program/tagas-ter-konferencia-2018-szombati-napijegy-martin-smith-uk-94741/459255" target="_blank">ITT</a> vagy
+                    <a href="https://tagas-ter-konferencia-2018-szombati-napijegy-martin-smit.broadway.hu/2018-09-15-08-00" target="_blank">ITT</a>!
+                </p>
 
                 <p><b>Szeptember 16</b>-án a belépés ingyenes!</p>
 
