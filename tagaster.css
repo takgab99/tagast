@@ -45,13 +45,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: white;
 }
 .navbar-inverse.dark-header .navbar-brand {
-    color: black;
+    color: #282828;
 }
 .navbar-inverse.dark-header .navbar-nav > li > a {
 }
 .navbar-fixed-top.dark-header .navbar-brand img {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
+    /*-webkit-filter: invert(100%);*/
+    /*filter: invert(100%);*/
 }
 
 .navbar-inverse .navbar-brand {
@@ -73,13 +73,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .navbar-inverse .navbar-brand #navbar-title {
     margin-top: 6px;
     text-transform: uppercase;
+    letter-spacing: 6px;
 }
 .navbar-inverse .navbar-brand #navbar-date{
     font-size: 12px;
     line-height: 14px;
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: black;
+    color: #282828;
 }
 .navbar-fixed-top {
     padding-bottom: 7px;
@@ -99,7 +100,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-        width: 225px;
+        width: 280px;
         margin-top: -14px;
     }
     .navbar-fixed-top.navbar-shrink {
@@ -126,6 +127,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     .navbar-fixed-top .navbar-brand #navbar-date {
         font-size: 0.5em;
         line-height: 1.9em;
+        letter-spacing: 2px;
     }
     .navbar-fixed-top.navbar-shrink .navbar-brand #navbar-date {
         font-size: 0.55em;
@@ -290,6 +292,7 @@ section h2 {
     height: 712px;
     margin-top: -20px;
     text-transform: uppercase;
+    letter-spacing: 11px;
 }
 .intro-image-container img {
     position: relative;

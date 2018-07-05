@@ -36,7 +36,7 @@ function getNavBar($main = "") {
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="<?php print $mainPageLink; ?>">
-                    <img src="img/logo-feher-kicsi.png" style="float: left;">
+                    <img src="img/logo-fekete-kicsi.png" style="float: left;">
                     <div id="navbar-title">Tágas Tér</div>
                     <div id="navbar-date">SZEGED, 2018.09.15-16.</div>
                 </a>
