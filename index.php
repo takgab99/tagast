@@ -228,7 +228,7 @@ getCounter("main");
         <div class="row">
             <div class="col-md-4 col-md-offset-2 col-sm-6 programs-item text-center">
                 <p><b>SZEPTEMBER 15. DE.</b></p>
-                <span>9:00 | <i>Református Egyetemi Dicsőítők</i><br>
+                <span>9:00 | Reggeli dicsőítés és főelőadások<br><i>Református Egyetemi Dicsőítők</i><br>
                      • <i>Czagány Gábor</i> • <i>Martin Smith</i></span>
                 <p></p>
                 <p><b>SZEPTEMBER 15. DU.</b></p>
