@@ -144,7 +144,7 @@ getCounter("main");
             <div class="col-md-8 portfolio-item text-center">
                 <p>Küldetésünk</p>
 
-                <p><i>„Izsák szolgái a völgyben is ástak, és megtalálták ott az élő víz kútját. De ott is civakodni kezdtek Gerár pásztorai Izsák pásztoraival: »Miénk a víz!« Ezért arról, ami ott történt, elnevezte a kutat Eszeknek (azaz Civakodásnak), mivel civakodtak vele. Másikat is ástak, amiatt is civakodtak, ezért elnevezte azt Szitnának (azaz Ellenségeskedésnek). Erre elment onnan, és ásott egy másik kutat. Emiatt nem civakodtak, elnevezte tehát Rehobótnak (azaz Tágas térnek) mondván: »Most tágas teret adott az Úr nekünk, s megadta, hogy sokasodjunk ezen a földön.”</i></p>
+                <p><i>„Izsák szolgái a völgyben is ástak, és megtalálták ott az élő víz kútját. De ott is civakodni kezdtek Gerár pásztorai Izsák pásztoraival: »Miénk a víz!« Ezért arról, ami ott történt, elnevezte a kutat Eszeknek (azaz Civakodásnak), mivel civakodtak vele. Másikat is ástak, amiatt is civakodtak, ezért elnevezte azt Szitnának (azaz Ellenségeskedésnek). Erre elment onnan, és ásott egy másik kutat. Emiatt nem civakodtak, elnevezte tehát Rehobótnak (azaz Tágas térnek) mondván: »Most tágas teret adott az Úr nekünk, s megadta, hogy sokasodjunk ezen a földön.”<br>1Móz/Gen 26,19-22. </i></p>
 
                 <p>A Tágas Tér az a hely, ahol minden ember találkozhat. Egy hely, ahová eljövünk az élő vízért és ahol megosztjuk egymással azokat a javakat, amelyeket az Úr adott számunkra. Mindannyiunk szívében ott rejlenek a Lélek ajándékai, amelyek arra várnak, hogy használjuk őket a reánk bízottak javára. A Tágas Tér azért jött létre, hogy keresd, elhozd és átadd azt, ami benned van.</p>
 
@@ -194,7 +194,7 @@ getCounter("main");
                 </div>
             </div -->
             <div class="col-sm-12 portfolio-item text-center question">
-                <p>Kérdésed van? Írj nekünk: <a href="mailto:info@tagaster.hu">tagasterfesztival@gmail.com</a></p>
+                <p>Kérdésed van? Írj nekünk: <a href="mailto:info@tagaster.hu">info@tagaster.hu</a></p>
             </div>
         </div>
 
@@ -228,8 +228,8 @@ getCounter("main");
         <div class="row">
             <div class="col-md-4 col-md-offset-2 col-sm-6 programs-item text-center">
                 <p><b>SZEPTEMBER 15. DE.</b></p>
-                <span>9:00 | Református Egyetemi Dicsőítők<br>
-                    <i>Czagány Gábor</i> • <i>Martin Smith</i></span>
+                <span>9:00 | <i>Református Egyetemi Dicsőítők</i><br>
+                     • <i>Czagány Gábor</i> • <i>Martin Smith</i></span>
                 <p></p>
                 <p><b>SZEPTEMBER 15. DU.</b></p>
                 <span>13:00 | 1. szeminárium<br>
@@ -252,7 +252,7 @@ getCounter("main");
                 <span>13:00 | Szeminárium<br>
                     <i>K.Ö.D.</i> • <i>Ferenczy Csaba és Valkai Ildikó</i> • <i>SzabadOn</i><br></span>
 
-                <span>17:00 | Esti dicsőítés<br>
+                <span>19:00 | Esti dicsőítés<br>
                     <i>Sipos Márk</i> • <i>Csiszér László és zenekara</i></span>
 
             </div>
