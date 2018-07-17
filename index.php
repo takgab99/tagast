@@ -250,7 +250,7 @@ getCounter("main");
 <p></p>
                 <p><b>SZEPTEMBER 16. DU.</b></p>
                 <span>13:00 | Szeminárium<br>
-                    <i>K.Ö.D.</i> • <i>Ferenczy Csaba és Valkai Ildikó</i> • <i>SzabadOn</i><br></span>
+                    <i>K.Ö.D.</i> • <i>Ferentzi Csaba és Valkai Ildikó</i> • <i>SzabadOn</i><br></span>
 
                 <span>19:00 | Esti dicsőítés<br>
                     <i>Sipos Márk</i> • <i>Csiszér László és zenekara</i></span>
