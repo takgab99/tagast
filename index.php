@@ -240,7 +240,7 @@ getCounter("main");
                     <i>Dobner Illés</i> • <i>Sipos Márk</i><br>
                     • <i>Matt Edwards</i> • <i>Botár Balázs</i><br></span>
 <p></p>
-                <span>17:00 | Esti dicsőítés<br>
+                <span>19:00 | Esti dicsőítés<br>
                     <i>Szegedi Baptista Ifjúsági Dicsőítők</i> • <i>Martin Smith Band</i></span>
             </div>
             <div class="col-md-4 col-sm-6 programs-item text-center">

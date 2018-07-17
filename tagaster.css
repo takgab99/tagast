@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: white;
 }
 .navbar-inverse.dark-header .navbar-brand {
-    color: #282828;
+    color: #494949;
 }
 .navbar-inverse.dark-header .navbar-nav > li > a {
 }
@@ -96,12 +96,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         padding-bottom: 7px;
     }
     .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
+        font-size: 1.8em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
         width: 280px;
         margin-top: -14px;
+        font-family: 'Gotham SSm A','Gotham SSm B',"Helvetica Neue",Helvetica,Arial,sans-serif;
     }
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
@@ -293,6 +294,7 @@ section h2 {
     margin-top: -20px;
     text-transform: uppercase;
     letter-spacing: 11px;
+    font-family: 'Gotham SSm A','Gotham SSm B',"Helvetica Neue",Helvetica,Arial,sans-serif;;
 }
 .intro-image-container img {
     position: relative;
